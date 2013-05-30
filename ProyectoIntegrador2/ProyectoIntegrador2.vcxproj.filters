@@ -47,5 +47,8 @@
     <ClCompile Include="Preguntas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Encriptador.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

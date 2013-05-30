@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cuestionario.cpp" />
+    <ClCompile Include="Encriptador.cpp" />
     <ClCompile Include="Preguntas.cpp" />
     <ClCompile Include="ProyectoIntegrador2.cpp" />
     <ClCompile Include="stdafx.cpp">
