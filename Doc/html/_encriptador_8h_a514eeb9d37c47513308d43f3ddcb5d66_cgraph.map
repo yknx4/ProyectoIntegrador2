@@ -1,0 +1,5 @@
+<map id="validarAcceso" name="validarAcceso">
+<area shape="rect" id="node2" href="$class_validador.html#aa28aeee63d24ac104492eac4a24ef215" title="Validador::esValido" alt="" coords="158,5,293,32"/>
+<area shape="rect" id="node4" href="$class_encriptador.html#aec4f517051f7255e45a6db0f90e21bd4" title="Encriptador::Cifrar" alt="" coords="162,56,289,83"/>
+<area shape="rect" id="node3" href="$class_validador.html#af37049c367add17c5f52e938608251f5" title="Validador::getContent" alt="" coords="341,5,488,32"/>
+</map>

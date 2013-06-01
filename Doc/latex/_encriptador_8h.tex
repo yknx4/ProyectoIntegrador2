@@ -1,0 +1,105 @@
+\section{Referencia del Archivo Proyecto\-Integrador2/\-Encriptador.h}
+\label{_encriptador_8h}\index{Proyecto\-Integrador2/\-Encriptador.\-h@{Proyecto\-Integrador2/\-Encriptador.\-h}}
+{\ttfamily \#include \char`\"{}stdafx.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$thread$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$conio.\-h$>$}\\*
+{\ttfamily \#include $<$chrono$>$}\\*
+Dependencia gráfica adjunta para Encriptador.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_encriptador_8h__incl}
+\end{center}
+\end{figure}
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{_encriptador_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Encriptador}
+\item 
+class {\bf Validador}
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bf validar\-Acceso} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\index{Encriptador.\-h@{Encriptador.\-h}!validar\-Acceso@{validar\-Acceso}}
+\index{validar\-Acceso@{validar\-Acceso}!Encriptador.h@{Encriptador.\-h}}
+\subsubsection[{validar\-Acceso}]{\setlength{\rightskip}{0pt plus 5cm}bool validar\-Acceso (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_encriptador_8h_a514eeb9d37c47513308d43f3ddcb5d66}
+
+
+Definición en la línea 110 del archivo Encriptador.\-cpp.
+
+
+\begin{DoxyCode}
+111 \{
+112     Encriptador crypt(\textcolor{stringliteral}{"RSeCDf23g4ihjlk6auvMLxpQUmAEBwzyFGontJHIqKr7 Ts8ON9PXVWZ0Y15bcd"}, \textcolor{stringliteral}{"
+      abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "});
+113     Validador valid(\textcolor{stringliteral}{"clave.txt"});
+114     \textcolor{keywordtype}{string} clave = \textcolor{stringliteral}{"pablito clavo un clavito en la calva de un calvito"};
+115     \textcolor{comment}{//cout<<"Buscando el archivo"<<endl;}
+116     \textcolor{comment}{//if(valid.encontrado)cout<<"Archivo encontrado en " << valid.path<<endl;}
+117     \textcolor{comment}{//cout<<crypt.Cifrar(clave)<<endl;}
+118     \textcolor{keywordtype}{bool} validacion =valid.esValido(crypt.Cifrar(clave));
+119     \textcolor{keywordflow}{if} (validacion)
+120     \{
+121         \textcolor{comment}{//      Acceso=true;}
+122         \textcolor{comment}{//cout<<"Acceso Permitido"<<endl;}
+123         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+124     \}
+125     \textcolor{keywordflow}{else}
+126     \{
+127         \textcolor{comment}{//      Acceso=false;}
+128         cout<<\textcolor{stringliteral}{"Acceso Denegado"}<<endl;
+129 
+130         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+131 
+132     \}
+133     \textcolor{comment}{//cout<<"Contenido del archivo: "<<valid.getContent()<<endl;}
+134     \textcolor{comment}{//  cout<<"Contenido del archivo decifrado: " << crypt.Decifrar(valid.content)<<endl;}
+135     \textcolor{comment}{//  cout<<"Clave correcta: " << clave<<endl;}
+136 \}
+\end{DoxyCode}
+
+
+Gráfico de llamadas para esta función\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_encriptador_8h_a514eeb9d37c47513308d43f3ddcb5d66_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Gráfico de llamadas a esta función\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{_encriptador_8h_a514eeb9d37c47513308d43f3ddcb5d66_icgraph}
+\end{center}
+\end{figure}
+
+

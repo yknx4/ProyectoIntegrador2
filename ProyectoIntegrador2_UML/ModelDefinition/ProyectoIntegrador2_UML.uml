@@ -1,0 +1,1594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="3b5a3ab8-90de-4253-9fb1-66c7098ca30f"
+  name="ProyectoIntegrador2_UML" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction
+        Id="5a3dc342-41f8-4845-a543-21d5f3f76c7a"
+        name="SecuenciadelPrograma"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="2cca84ab-6691-4b14-af21-89ed5d132fdf">
+            <body>Pueden ser agregadas tambien cualquier clase que herede a Pregunta</body>
+            <annotatedElements>
+              <combinedFragmentMoniker
+                Id="6fcd1859-2bc1-4cfd-a27b-7a1944a2a49f"
+                LastKnownName="CombinedFragment1"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="4866b894-827a-41d5-8422-20a34f7efbe4">
+            <body>ValidarAcceso() = false</body>
+            <annotatedElements>
+              <interactionOperandMoniker
+                Id="91320305-5df8-4c34-876b-e6bb146371f9"
+                LastKnownName="InteractionOperand1"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="85a77a4d-d420-44a6-8456-a7bd0311f050">
+            <body>while (validarAcceso() &amp; final)</body>
+            <annotatedElements>
+              <combinedFragmentMoniker
+                Id="9159f021-7ffa-49bc-8dcd-6a418b791b78"
+                LastKnownName="CombinedFragment1"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <combinedFragment
+            Id="03eb5f51-9833-48ad-8328-c74e744e4a4b"
+            name="CombinedFragment2"
+            interactionOperator="Break">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand
+                Id="91320305-5df8-4c34-876b-e6bb146371f9"
+                name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                    LastKnownName="program : Programa"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint
+                    Id="814fd0e1-7176-4992-ab28-b58035293b62"
+                    guardText="ValidarAcceso()=False" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="80848da6-c536-4015-911f-611d6af98b57"
+                    LastKnownName="OperandOccurrenceSpecification65"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="509c7d3a-0dd9-498c-a655-c99426579266"
+                    LastKnownName="OperandOccurrenceSpecification66"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification
+            Id="80848da6-c536-4015-911f-611d6af98b57"
+            name="OperandOccurrenceSpecification65">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e4248356-e348-41af-9318-ee68ab1817bd"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="5eb87078-4d20-4c22-9af4-822cf70a3167"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b2303fc1-1625-4266-bd4e-6fad63f0c42a"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="76ecda3a-9fdb-46da-90a2-586290f3d188"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="4ab8c545-8f61-4bb2-9c6b-297ed6ba325d"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="76ecda3a-9fdb-46da-90a2-586290f3d188"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7ceb4acd-5140-4a4f-bb4c-07821ae930f4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4ab8c545-8f61-4bb2-9c6b-297ed6ba325d"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b2303fc1-1625-4266-bd4e-6fad63f0c42a"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="40adf253-5e23-4c74-b51f-c008714925a2"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="509c7d3a-0dd9-498c-a655-c99426579266"
+            name="OperandOccurrenceSpecification66">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <combinedFragment
+            Id="f0061454-39f4-4c74-89c4-d626b64a483c"
+            name="CombinedFragment1"
+            interactionOperator="Par">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand
+                Id="b6959702-479c-48e0-8289-d3867d31680f"
+                name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                    LastKnownName="program : Programa"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                  <lifelineMoniker
+                    Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                    LastKnownName="cuestionario : Cuestionaro"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                </coveredLifelines>
+                <fragments>
+                  <combinedFragment
+                    Id="6fcd1859-2bc1-4cfd-a27b-7a1944a2a49f"
+                    name="CombinedFragment1"
+                    interactionOperator="Loop">
+                    <coveredLifelines>
+                      <lifelineMoniker
+                        Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                        LastKnownName="program : Programa"
+                        LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                      <lifelineMoniker
+                        Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                        LastKnownName="cuestionario : Cuestionaro"
+                        LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand
+                        Id="ad484e76-a374-45b9-ace8-94af52934637"
+                        name="InteractionOperand1">
+                        <coveredLifelines>
+                          <lifelineMoniker
+                            Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                            LastKnownName="program : Programa"
+                            LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                          <lifelineMoniker
+                            Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                            LastKnownName="cuestionario : Cuestionaro"
+                            LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                        </coveredLifelines>
+                        <guard>
+                          <interactionConstraint
+                            Id="b2cc275b-92d6-4e36-b4eb-bdeaf6d6d051"
+                            guardText="Por cada pregunta se repite esto, donde Texto es la pregunta">
+                            <maxInt>
+                              <literalString
+                                Id="0f6105d3-4307-490b-8c37-2b05f60f06da"
+                                name="LiteralString1" />
+                            </maxInt>
+                            <minInt>
+                              <literalString
+                                Id="355acfb4-50b6-4717-b525-da197a809130"
+                                name="LiteralString2" />
+                            </minInt>
+                          </interactionConstraint>
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker
+                            Id="7c43ac13-2507-44cd-8578-17e826255628"
+                            LastKnownName="OperandOccurrenceSpecification43"
+                            LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="9586b676-ad39-4959-96a4-b6c6a7e73294"
+                            LastKnownName="OperandOccurrenceSpecification44"
+                            LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="3337e604-d41d-409b-940d-9388cf884582"
+                            LastKnownName="OperandOccurrenceSpecification45"
+                            LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="262a3d75-e72e-400f-855e-6d1a52f53dcd"
+                            LastKnownName="OperandOccurrenceSpecification46"
+                            LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
+                <guard>
+                  <interactionConstraint
+                    Id="5995d730-42f2-49d7-b555-d6edb58e218b"
+                    guardText="AplicacionDeEncuesta()" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="6a929f63-6e6f-4139-9d78-2f5aec8a02dd"
+                    LastKnownName="OperandOccurrenceSpecification35"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="0d0b7645-e06d-4915-a70b-d2fad2356d30"
+                    LastKnownName="OperandOccurrenceSpecification36"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="26f7bb76-09d4-47de-a7a2-856c6eaeb7b0"
+                    LastKnownName="OperandOccurrenceSpecification37"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="90b51c67-91a2-4542-a7aa-c634981e3f6a"
+                    LastKnownName="OperandOccurrenceSpecification38"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+              <interactionOperand
+                Id="3a06d5f3-6e2d-4c88-ab02-aef0755464f3"
+                name="InteractionOperand2">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                    LastKnownName="program : Programa"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                  <lifelineMoniker
+                    Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                    LastKnownName="cuestionario : Cuestionaro"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                </coveredLifelines>
+                <fragments>
+                  <combinedFragment
+                    Id="9159f021-7ffa-49bc-8dcd-6a418b791b78"
+                    name="CombinedFragment1"
+                    interactionOperator="Loop">
+                    <coveredLifelines>
+                      <lifelineMoniker
+                        Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                        LastKnownName="program : Programa"
+                        LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand
+                        Id="47bc3b89-8a66-4147-85a9-17f28ad55c27"
+                        name="InteractionOperand1">
+                        <coveredLifelines>
+                          <lifelineMoniker
+                            Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                            LastKnownName="program : Programa"
+                            LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                        </coveredLifelines>
+                        <guard>
+                          <interactionConstraint
+                            Id="5302be52-468f-437f-8f5a-c481c4dd3d5d"
+                            guardText="while (validarAcceso() &amp; final)">
+                            <maxInt>
+                              <literalString
+                                Id="11fa6199-5844-453c-95d6-39e63a638fbb"
+                                name="LiteralString1" />
+                            </maxInt>
+                            <minInt>
+                              <literalString
+                                Id="e36298b0-efbd-4c8d-af0b-0cee81d31374"
+                                name="LiteralString2" />
+                            </minInt>
+                          </interactionConstraint>
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker
+                            Id="cce2ba8c-ede9-4c5d-9e4d-93134e43a8b5"
+                            LastKnownName="OperandOccurrenceSpecification63"
+                            LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="8036a608-9f1d-4483-8228-8ef78874772c"
+                            LastKnownName="OperandOccurrenceSpecification64"
+                            LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
+                <guard>
+                  <interactionConstraint
+                    Id="4f6abeee-0caa-42d6-aeab-87a5e945faa5"
+                    guardText="Main()" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="b3b91b90-a91d-406a-840d-dd70bc12598a"
+                    LastKnownName="OperandOccurrenceSpecification39"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="d2e923d6-d68e-419f-886c-5f52e1f2f73e"
+                    LastKnownName="OperandOccurrenceSpecification40"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="0fefb870-9e8c-4c39-b8a2-9a653d9cb144"
+                    LastKnownName="OperandOccurrenceSpecification41"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="413a14f5-908b-411d-bdc9-5af5c6136b8b"
+                    LastKnownName="OperandOccurrenceSpecification42"
+                    LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification
+            Id="6a929f63-6e6f-4139-9d78-2f5aec8a02dd"
+            name="OperandOccurrenceSpecification35">
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="26f7bb76-09d4-47de-a7a2-856c6eaeb7b0"
+            name="OperandOccurrenceSpecification37">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="7c43ac13-2507-44cd-8578-17e826255628"
+            name="OperandOccurrenceSpecification43">
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="3337e604-d41d-409b-940d-9388cf884582"
+            name="OperandOccurrenceSpecification45">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="c76df4de-806b-472a-8ab7-00be79099811"
+            name="BehaviorExecutionSpecification13">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="5ef0a541-3aa4-44ee-be0a-7b53ea332460"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="6e12e9f4-d029-4dd5-a379-17536abf6fdc"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="c61fdf17-c315-4b95-aeea-4b9b42235637"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e3c76593-e654-41ef-9679-0e2d50fb9256"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="6e12e9f4-d029-4dd5-a379-17536abf6fdc"
+            name="ExecutionOccurrenceSpecification25">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="79e535a3-45dd-482f-a8cd-1177eb201d4a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="20ab9679-a508-476b-8228-832c138a54d5"
+            name="MessageOccurrenceSpecification39">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c61fdf17-c315-4b95-aeea-4b9b42235637"
+            name="MessageOccurrenceSpecification40">
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c0bafeb6-199f-44da-bac2-a5bc91463abc"
+            name="MessageOccurrenceSpecification42">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e3c76593-e654-41ef-9679-0e2d50fb9256"
+            name="MessageOccurrenceSpecification41">
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="5ef0a541-3aa4-44ee-be0a-7b53ea332460"
+            name="ExecutionOccurrenceSpecification26">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b837c915-deeb-4bc3-8740-e615189789e8"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="262a3d75-e72e-400f-855e-6d1a52f53dcd"
+            name="OperandOccurrenceSpecification46">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="9586b676-ad39-4959-96a4-b6c6a7e73294"
+            name="OperandOccurrenceSpecification44">
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="3934ae58-3915-44b7-a341-a2130486a64d"
+            name="BehaviorExecutionSpecification14">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="31159265-3396-44b2-af02-f456f0ee26b3"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="227ebbe7-3338-44d0-8bfd-8eaa55a434e7"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="b9a9d5f2-b44e-441a-b8af-e862e9301645"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e5500af2-582e-44d4-a216-81f896706822"
+                LastKnownName="MessageOccurrenceSpecification45"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="227ebbe7-3338-44d0-8bfd-8eaa55a434e7"
+            name="ExecutionOccurrenceSpecification27">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="74894b2c-e27d-435f-8215-395fb12d57bb"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f3bc6f52-2bde-43d7-ae5f-ecbec301466c"
+            name="MessageOccurrenceSpecification43">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b9a9d5f2-b44e-441a-b8af-e862e9301645"
+            name="MessageOccurrenceSpecification44">
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="71405023-1e88-4a67-99c4-7c82de9ac1fb"
+            name="MessageOccurrenceSpecification46">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e5500af2-582e-44d4-a216-81f896706822"
+            name="MessageOccurrenceSpecification45">
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="31159265-3396-44b2-af02-f456f0ee26b3"
+            name="ExecutionOccurrenceSpecification28">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="25aca515-1560-4fe3-af42-fbef2d3d0bd4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="6f82d956-7176-44cf-8f6d-29ad53b62f0c"
+            name="BehaviorExecutionSpecification15">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b1a9bb84-8b8d-4335-85e5-d85b5a58caf1"
+                LastKnownName="ExecutionOccurrenceSpecification30"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="9233cdb2-6a4f-40f7-b244-47c655f60ddf"
+                LastKnownName="ExecutionOccurrenceSpecification29"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="f81c5187-c791-4612-895b-e661d9b50f8d"
+                LastKnownName="MessageOccurrenceSpecification48"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="92e950dd-8c76-4b5f-bc1c-d1977b5e91b7"
+                LastKnownName="MessageOccurrenceSpecification49"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="9233cdb2-6a4f-40f7-b244-47c655f60ddf"
+            name="ExecutionOccurrenceSpecification29">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4c1f9442-79d8-4267-af1a-5c7af0e2c29a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f81c5187-c791-4612-895b-e661d9b50f8d"
+            name="MessageOccurrenceSpecification48">
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1b573a93-ccf9-4d96-a6a3-8daabb1520c0"
+            name="MessageOccurrenceSpecification47">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="442fdfe8-1272-4919-bea3-13c206136794"
+            name="MessageOccurrenceSpecification50">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="92e950dd-8c76-4b5f-bc1c-d1977b5e91b7"
+            name="MessageOccurrenceSpecification49">
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b1a9bb84-8b8d-4335-85e5-d85b5a58caf1"
+            name="ExecutionOccurrenceSpecification30">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b57dcf00-30a3-47e9-bf0c-33885e50947e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="0d0b7645-e06d-4915-a70b-d2fad2356d30"
+            name="OperandOccurrenceSpecification36">
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="90b51c67-91a2-4542-a7aa-c634981e3f6a"
+            name="OperandOccurrenceSpecification38">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="0fefb870-9e8c-4c39-b8a2-9a653d9cb144"
+            name="OperandOccurrenceSpecification41">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="b3b91b90-a91d-406a-840d-dd70bc12598a"
+            name="OperandOccurrenceSpecification39">
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bf5bcb3c-2ccf-4d02-85ce-5c7552b58f13"
+            name="MessageOccurrenceSpecification51">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="f5169aa6-ec89-428a-ac43-23a7d7ecf43f"
+            name="BehaviorExecutionSpecification16">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="dc3b24fe-855c-4dbb-b96b-522b59cc41a6"
+                LastKnownName="ExecutionOccurrenceSpecification32"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3672fd2c-c5d4-4d9d-9476-733c6933f12c"
+                LastKnownName="ExecutionOccurrenceSpecification31"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="124bd825-eea0-4687-bc6d-89fb0be25e22"
+                LastKnownName="MessageOccurrenceSpecification52"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3672fd2c-c5d4-4d9d-9476-733c6933f12c"
+            name="ExecutionOccurrenceSpecification31">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="65a1d5b1-35eb-4cd7-bcba-186fdf688ceb"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="124bd825-eea0-4687-bc6d-89fb0be25e22"
+            name="MessageOccurrenceSpecification52">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="dc3b24fe-855c-4dbb-b96b-522b59cc41a6"
+            name="ExecutionOccurrenceSpecification32">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="3ee94043-5b0c-41e4-9c2b-812983cf3bd6"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="cce2ba8c-ede9-4c5d-9e4d-93134e43a8b5"
+            name="OperandOccurrenceSpecification63">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9759564b-9590-4275-920f-f54546ada875"
+            name="MessageOccurrenceSpecification53">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="28196113-3580-4749-b877-b4650f5012bf"
+            name="BehaviorExecutionSpecification17">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="8c19f55e-cf3c-41f3-8daf-e672e7b125c1"
+                LastKnownName="ExecutionOccurrenceSpecification34"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="5d849281-d30e-4dcb-ad60-87381bbd551b"
+                LastKnownName="ExecutionOccurrenceSpecification33"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="00d31c22-e5bd-49a9-a9f2-f0c380267e78"
+                LastKnownName="MessageOccurrenceSpecification54"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="5d849281-d30e-4dcb-ad60-87381bbd551b"
+            name="ExecutionOccurrenceSpecification33">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8b04fbde-1fed-4044-ac86-86a77772b4ca"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="00d31c22-e5bd-49a9-a9f2-f0c380267e78"
+            name="MessageOccurrenceSpecification54">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="8c19f55e-cf3c-41f3-8daf-e672e7b125c1"
+            name="ExecutionOccurrenceSpecification34">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="42e980a6-5123-4f85-8cbe-54f362494b7c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5a8fbe71-578c-4947-af46-c99bc0ae0185"
+            name="MessageOccurrenceSpecification51">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="cb4ca278-4c60-4b48-b4c0-1cca169ec71f"
+            name="BehaviorExecutionSpecification16">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a743beb7-d3d2-4cb8-9375-4d39e78228cf"
+                LastKnownName="ExecutionOccurrenceSpecification32"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f93433ed-d563-4f8d-b80e-6cea9eb1958a"
+                LastKnownName="ExecutionOccurrenceSpecification31"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="201314b3-6d92-4d30-99fe-6ecac5a88cb7"
+                LastKnownName="MessageOccurrenceSpecification52"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f93433ed-d563-4f8d-b80e-6cea9eb1958a"
+            name="ExecutionOccurrenceSpecification31">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7a77e513-853e-4d44-8796-10f27a69be7e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="201314b3-6d92-4d30-99fe-6ecac5a88cb7"
+            name="MessageOccurrenceSpecification52">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a743beb7-d3d2-4cb8-9375-4d39e78228cf"
+            name="ExecutionOccurrenceSpecification32">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="98fc1144-bcb1-486c-8f98-4f6e2b963c62"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="8036a608-9f1d-4483-8228-8ef78874772c"
+            name="OperandOccurrenceSpecification64">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="d2e923d6-d68e-419f-886c-5f52e1f2f73e"
+            name="OperandOccurrenceSpecification40">
+            <covered>
+              <lifelineMoniker
+                Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+                LastKnownName="cuestionario : Cuestionaro"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="413a14f5-908b-411d-bdc9-5af5c6136b8b"
+            name="OperandOccurrenceSpecification42">
+            <covered>
+              <lifelineMoniker
+                Id="12c2420e-d22d-4d52-90f6-076790fda914"
+                LastKnownName="program : Programa"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="12c2420e-d22d-4d52-90f6-076790fda914"
+            name="program : Programa"
+            isActor="false"
+            lifelineDisplayName="program : Programa">
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="80848da6-c536-4015-911f-611d6af98b57"
+                LastKnownName="OperandOccurrenceSpecification65"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e4248356-e348-41af-9318-ee68ab1817bd"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="76ecda3a-9fdb-46da-90a2-586290f3d188"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b2303fc1-1625-4266-bd4e-6fad63f0c42a"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="509c7d3a-0dd9-498c-a655-c99426579266"
+                LastKnownName="OperandOccurrenceSpecification66"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="26f7bb76-09d4-47de-a7a2-856c6eaeb7b0"
+                LastKnownName="OperandOccurrenceSpecification37"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="3337e604-d41d-409b-940d-9388cf884582"
+                LastKnownName="OperandOccurrenceSpecification45"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="20ab9679-a508-476b-8228-832c138a54d5"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c0bafeb6-199f-44da-bac2-a5bc91463abc"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="262a3d75-e72e-400f-855e-6d1a52f53dcd"
+                LastKnownName="OperandOccurrenceSpecification46"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f3bc6f52-2bde-43d7-ae5f-ecbec301466c"
+                LastKnownName="MessageOccurrenceSpecification43"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="71405023-1e88-4a67-99c4-7c82de9ac1fb"
+                LastKnownName="MessageOccurrenceSpecification46"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1b573a93-ccf9-4d96-a6a3-8daabb1520c0"
+                LastKnownName="MessageOccurrenceSpecification47"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="442fdfe8-1272-4919-bea3-13c206136794"
+                LastKnownName="MessageOccurrenceSpecification50"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="90b51c67-91a2-4542-a7aa-c634981e3f6a"
+                LastKnownName="OperandOccurrenceSpecification38"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="0fefb870-9e8c-4c39-b8a2-9a653d9cb144"
+                LastKnownName="OperandOccurrenceSpecification41"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bf5bcb3c-2ccf-4d02-85ce-5c7552b58f13"
+                LastKnownName="MessageOccurrenceSpecification51"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3672fd2c-c5d4-4d9d-9476-733c6933f12c"
+                LastKnownName="ExecutionOccurrenceSpecification31"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="dc3b24fe-855c-4dbb-b96b-522b59cc41a6"
+                LastKnownName="ExecutionOccurrenceSpecification32"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="cce2ba8c-ede9-4c5d-9e4d-93134e43a8b5"
+                LastKnownName="OperandOccurrenceSpecification63"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9759564b-9590-4275-920f-f54546ada875"
+                LastKnownName="MessageOccurrenceSpecification53"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5d849281-d30e-4dcb-ad60-87381bbd551b"
+                LastKnownName="ExecutionOccurrenceSpecification33"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="8c19f55e-cf3c-41f3-8daf-e672e7b125c1"
+                LastKnownName="ExecutionOccurrenceSpecification34"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5a8fbe71-578c-4947-af46-c99bc0ae0185"
+                LastKnownName="MessageOccurrenceSpecification51"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f93433ed-d563-4f8d-b80e-6cea9eb1958a"
+                LastKnownName="ExecutionOccurrenceSpecification31"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a743beb7-d3d2-4cb8-9375-4d39e78228cf"
+                LastKnownName="ExecutionOccurrenceSpecification32"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="8036a608-9f1d-4483-8228-8ef78874772c"
+                LastKnownName="OperandOccurrenceSpecification64"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="413a14f5-908b-411d-bdc9-5af5c6136b8b"
+                LastKnownName="OperandOccurrenceSpecification42"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="8bf5db5b-b376-433e-a07f-b3f3e0dab5cc"
+            name="cuestionario : Cuestionaro"
+            isActor="false"
+            lifelineDisplayName="cuestionario : Cuestionaro">
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="6a929f63-6e6f-4139-9d78-2f5aec8a02dd"
+                LastKnownName="OperandOccurrenceSpecification35"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="7c43ac13-2507-44cd-8578-17e826255628"
+                LastKnownName="OperandOccurrenceSpecification43"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="6e12e9f4-d029-4dd5-a379-17536abf6fdc"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5ef0a541-3aa4-44ee-be0a-7b53ea332460"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="9586b676-ad39-4959-96a4-b6c6a7e73294"
+                LastKnownName="OperandOccurrenceSpecification44"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="227ebbe7-3338-44d0-8bfd-8eaa55a434e7"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="31159265-3396-44b2-af02-f456f0ee26b3"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="9233cdb2-6a4f-40f7-b244-47c655f60ddf"
+                LastKnownName="ExecutionOccurrenceSpecification29"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b1a9bb84-8b8d-4335-85e5-d85b5a58caf1"
+                LastKnownName="ExecutionOccurrenceSpecification30"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="0d0b7645-e06d-4915-a70b-d2fad2356d30"
+                LastKnownName="OperandOccurrenceSpecification36"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="b3b91b90-a91d-406a-840d-dd70bc12598a"
+                LastKnownName="OperandOccurrenceSpecification39"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="d2e923d6-d68e-419f-886c-5f52e1f2f73e"
+                LastKnownName="OperandOccurrenceSpecification40"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="b21b5b80-40a0-47df-87d4-2b0a56a3ccc8"
+            name="ValidarAcceso()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e4248356-e348-41af-9318-ee68ab1817bd"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4ab8c545-8f61-4bb2-9c6b-297ed6ba325d"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f5ea60ad-c64d-48fc-8dd1-78d83255d73b"
+            name="addPregunta(new Pregunta(&quot;Texto&quot;))"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="20ab9679-a508-476b-8228-832c138a54d5"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c61fdf17-c315-4b95-aeea-4b9b42235637"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="7e0c6524-1cf7-4ae9-84c2-26e1a4418051"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e3c76593-e654-41ef-9679-0e2d50fb9256"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c0bafeb6-199f-44da-bac2-a5bc91463abc"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="4e5b56d2-6e41-4878-9529-6a8d24f8d95d"
+            name="hacerPreguntas()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f3bc6f52-2bde-43d7-ae5f-ecbec301466c"
+                LastKnownName="MessageOccurrenceSpecification43"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b9a9d5f2-b44e-441a-b8af-e862e9301645"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="3ea6a6d6-b37e-49b4-b696-6ae7b46c9abe"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e5500af2-582e-44d4-a216-81f896706822"
+                LastKnownName="MessageOccurrenceSpecification45"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="71405023-1e88-4a67-99c4-7c82de9ac1fb"
+                LastKnownName="MessageOccurrenceSpecification46"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="3935e9b8-3f1c-44e1-92f0-502552ae32bc"
+            name="GuardarCuestionario()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1b573a93-ccf9-4d96-a6a3-8daabb1520c0"
+                LastKnownName="MessageOccurrenceSpecification47"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f81c5187-c791-4612-895b-e661d9b50f8d"
+                LastKnownName="MessageOccurrenceSpecification48"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="bc7d7068-9e7e-4173-8243-7515882248c6"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="92e950dd-8c76-4b5f-bc1c-d1977b5e91b7"
+                LastKnownName="MessageOccurrenceSpecification49"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="442fdfe8-1272-4919-bea3-13c206136794"
+                LastKnownName="MessageOccurrenceSpecification50"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="77d3e9e8-3b9d-46f8-a3a0-a1379fbeb209"
+            name="sleep_for(3000)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bf5bcb3c-2ccf-4d02-85ce-5c7552b58f13"
+                LastKnownName="MessageOccurrenceSpecification51"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="124bd825-eea0-4687-bc6d-89fb0be25e22"
+                LastKnownName="MessageOccurrenceSpecification52"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="41647db1-da71-4148-ade3-0b9d76b99bc8"
+            name="validarAcceso()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9759564b-9590-4275-920f-f54546ada875"
+                LastKnownName="MessageOccurrenceSpecification53"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="00d31c22-e5bd-49a9-a9f2-f0c380267e78"
+                LastKnownName="MessageOccurrenceSpecification54"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c53c5481-2bd5-4c26-8576-624a15fa3372"
+            name="sleep_for(3000)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5a8fbe71-578c-4947-af46-c99bc0ae0185"
+                LastKnownName="MessageOccurrenceSpecification51"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="201314b3-6d92-4d30-99fe-6ecac5a88cb7"
+                LastKnownName="MessageOccurrenceSpecification52"
+                LastKnownLocation="ProyectoIntegrador2_UML.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7ceb4acd-5140-4a4f-bb4c-07821ae930f4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="40adf253-5e23-4c74-b51f-c008714925a2"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="79e535a3-45dd-482f-a8cd-1177eb201d4a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b837c915-deeb-4bc3-8740-e615189789e8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="74894b2c-e27d-435f-8215-395fb12d57bb"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="25aca515-1560-4fe3-af42-fbef2d3d0bd4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4c1f9442-79d8-4267-af1a-5c7af0e2c29a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b57dcf00-30a3-47e9-bf0c-33885e50947e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="65a1d5b1-35eb-4cd7-bcba-186fdf688ceb"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3ee94043-5b0c-41e4-9c2b-812983cf3bd6"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8b04fbde-1fed-4044-ac86-86a77772b4ca"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="42e980a6-5123-4f85-8cbe-54f362494b7c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7a77e513-853e-4d44-8796-10f27a69be7e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="98fc1144-bcb1-486c-8f98-4f6e2b963c62"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

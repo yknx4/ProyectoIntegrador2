@@ -1,0 +1,191 @@
+\section{Referencia de la Clase Validador}
+\label{class_validador}\index{Validador@{Validador}}
+
+
+{\ttfamily \#include $<$Encriptador.\-h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Validador} (std\-::string filename)
+\item 
+{\bf $\sim$\-Validador} ()
+\item 
+bool {\bf es\-Valido} (std\-::string input)
+\item 
+std\-::string {\bf get\-Content} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf path}
+\item 
+int {\bf size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 31 del archivo Encriptador.\-h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Validador@{Validador}!Validador@{Validador}}
+\index{Validador@{Validador}!Validador@{Validador}}
+\subsubsection[{Validador}]{\setlength{\rightskip}{0pt plus 5cm}Validador\-::\-Validador (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{filename}
+\end{DoxyParamCaption}
+)}\label{class_validador_ab2626f57c35c5349a142c9b8a82ec5de}
+
+
+Definición en la línea 86 del archivo Encriptador.\-cpp.
+
+
+\begin{DoxyCode}
+87 \{
+88     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{char} i=\textcolor{charliteral}{'A'};i<=\textcolor{charliteral}{'Z'};i++)
+89     \{
+90         \textcolor{comment}{//std::cout<<i<<std::endl;}
+91         std::string tmpcontent;
+92         path = \textcolor{stringliteral}{"N:\(\backslash\)\(\backslash\)"}+filename;
+93         path[0]=i;
+94         \textcolor{comment}{//std::cout<<"Checando en "+path<<std::endl;}
+95         std::ifstream archivoClave (path, std::ifstream::binary);
+96         \textcolor{keywordflow}{if} (archivoClave.is\_open())
+97         \{
+98 
+99             content.assign( (std::istreambuf\_iterator<char>(archivoClave) ),
+100                 (std::istreambuf\_iterator<char>()    ) );
+101             \textcolor{keywordflow}{break};
+102             tmpcontent.assign(content.data());
+103         \}
+104 
+105         \textcolor{comment}{//std::cout<<tmpcontent<<std::endl;}
+106 
+107     \}
+108 \}
+\end{DoxyCode}
+\index{Validador@{Validador}!$\sim$\-Validador@{$\sim$\-Validador}}
+\index{$\sim$\-Validador@{$\sim$\-Validador}!Validador@{Validador}}
+\subsubsection[{$\sim$\-Validador}]{\setlength{\rightskip}{0pt plus 5cm}Validador\-::$\sim$\-Validador (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_validador_ab10f475fc21b063297ea9e88ecc248c1}
+
+
+Definición en la línea 81 del archivo Encriptador.\-cpp.
+
+
+\begin{DoxyCode}
+82 \{
+83 
+84 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Validador@{Validador}!es\-Valido@{es\-Valido}}
+\index{es\-Valido@{es\-Valido}!Validador@{Validador}}
+\subsubsection[{es\-Valido}]{\setlength{\rightskip}{0pt plus 5cm}bool Validador\-::es\-Valido (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{input}
+\end{DoxyParamCaption}
+)}\label{class_validador_aa28aeee63d24ac104492eac4a24ef215}
+
+
+Definición en la línea 68 del archivo Encriptador.\-cpp.
+
+
+\begin{DoxyCode}
+69 \{
+70     std::string contenido = getContent();
+71     \textcolor{keywordflow}{if} (input == contenido)
+72     \{
+73         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+74     \} 
+75     \textcolor{keywordflow}{else}
+76     \{
+77         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+78     \}
+79 \}
+\end{DoxyCode}
+
+
+Gráfico de llamadas para esta función\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_validador_aa28aeee63d24ac104492eac4a24ef215_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Gráfico de llamadas a esta función\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_validador_aa28aeee63d24ac104492eac4a24ef215_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Validador@{Validador}!get\-Content@{get\-Content}}
+\index{get\-Content@{get\-Content}!Validador@{Validador}}
+\subsubsection[{get\-Content}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Validador\-::get\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_validador_af37049c367add17c5f52e938608251f5}
+
+
+Definición en la línea 63 del archivo Encriptador.\-cpp.
+
+
+\begin{DoxyCode}
+64 \{
+65     \textcolor{keywordflow}{return} content;
+66 \}
+\end{DoxyCode}
+
+
+Gráfico de llamadas a esta función\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_validador_af37049c367add17c5f52e938608251f5_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Documentación de los datos miembro}
+\index{Validador@{Validador}!path@{path}}
+\index{path@{path}!Validador@{Validador}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Validador\-::path}\label{class_validador_a55da861f4a63a702a554f4b0f4834749}
+
+
+Definición en la línea 37 del archivo Encriptador.\-h.
+
+\index{Validador@{Validador}!size@{size}}
+\index{size@{size}!Validador@{Validador}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Validador\-::size}\label{class_validador_a34374bc7f9d8ffac55db94a6325e41bd}
+
+
+Definición en la línea 38 del archivo Encriptador.\-h.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-Integrador2/{\bf Encriptador.\-h}\item 
+Proyecto\-Integrador2/{\bf Encriptador.\-cpp}\end{DoxyCompactItemize}

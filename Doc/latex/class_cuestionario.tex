@@ -1,0 +1,192 @@
+\section{Referencia de la Clase Cuestionario}
+\label{class_cuestionario}\index{Cuestionario@{Cuestionario}}
+
+
+{\ttfamily \#include $<$Cuestionario.\-h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Cuestionario} ()
+\item 
+{\bf $\sim$\-Cuestionario} ()
+\item 
+bool {\bf Guardar\-Cuestionario} ()
+\item 
+void {\bf hacer\-Preguntas} ()
+\item 
+void {\bf add\-Pregunta} ({\bf Pregunta} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 6 del archivo Cuestionario.\-h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Cuestionario@{Cuestionario}!Cuestionario@{Cuestionario}}
+\index{Cuestionario@{Cuestionario}!Cuestionario@{Cuestionario}}
+\subsubsection[{Cuestionario}]{\setlength{\rightskip}{0pt plus 5cm}Cuestionario\-::\-Cuestionario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cuestionario_a2455ac26c1e8d11143184e6dbd91e1f4}
+
+
+Definición en la línea 12 del archivo Cuestionario.\-cpp.
+
+
+\begin{DoxyCode}
+13 \{
+14     
+15 \}
+\end{DoxyCode}
+\index{Cuestionario@{Cuestionario}!$\sim$\-Cuestionario@{$\sim$\-Cuestionario}}
+\index{$\sim$\-Cuestionario@{$\sim$\-Cuestionario}!Cuestionario@{Cuestionario}}
+\subsubsection[{$\sim$\-Cuestionario}]{\setlength{\rightskip}{0pt plus 5cm}Cuestionario\-::$\sim$\-Cuestionario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cuestionario_af2998a894d70b648fc0a088924cf09f2}
+
+
+Definición en la línea 17 del archivo Cuestionario.\-cpp.
+
+
+\begin{DoxyCode}
+18 \{
+19 
+20 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Cuestionario@{Cuestionario}!add\-Pregunta@{add\-Pregunta}}
+\index{add\-Pregunta@{add\-Pregunta}!Cuestionario@{Cuestionario}}
+\subsubsection[{add\-Pregunta}]{\setlength{\rightskip}{0pt plus 5cm}void Cuestionario\-::add\-Pregunta (
+\begin{DoxyParamCaption}
+\item[{{\bf Pregunta} $\ast$}]{input}
+\end{DoxyParamCaption}
+)}\label{class_cuestionario_a6fde1365c5b84321eba9a6c03512ae65}
+
+
+Definición en la línea 64 del archivo Cuestionario.\-cpp.
+
+
+\begin{DoxyCode}
+64                                              \{
+65     preguntas.push\_back(input);
+66 
+67 \}
+\end{DoxyCode}
+
+
+Gráfico de llamadas a esta función\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cuestionario_a6fde1365c5b84321eba9a6c03512ae65_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Cuestionario@{Cuestionario}!Guardar\-Cuestionario@{Guardar\-Cuestionario}}
+\index{Guardar\-Cuestionario@{Guardar\-Cuestionario}!Cuestionario@{Cuestionario}}
+\subsubsection[{Guardar\-Cuestionario}]{\setlength{\rightskip}{0pt plus 5cm}bool Cuestionario\-::\-Guardar\-Cuestionario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cuestionario_ab8cf9b63d66a3ab624a2ff0b9f854773}
+
+
+Definición en la línea 22 del archivo Cuestionario.\-cpp.
+
+
+\begin{DoxyCode}
+23 \{
+24     \textcolor{keyword}{typedef} std::chrono::system\_clock Clock;
+25     \textcolor{keyword}{auto} now = Clock::now();
+26     std::time\_t now\_c = Clock::to\_time\_t(now);
+27 
+28     \textcolor{keyword}{struct }tm *parts = std::localtime(&now\_c);
+29     \textcolor{keywordtype}{int} anio= 1900 + parts->tm\_year;
+30     \textcolor{keywordtype}{int} month= 1    + parts->tm\_mon;
+31     \textcolor{keywordtype}{int} day = parts->tm\_mday ;
+32 
+33     ofstream myfile;
+34     myfile.open(\textcolor{stringliteral}{"respuesta.txt"},ios::out | ios::app);
+35     \textcolor{keywordtype}{string} respues = \textcolor{stringliteral}{""};
+36     \textcolor{keywordflow}{if} (myfile.is\_open())
+37     \{
+38         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i=0;i<preguntas.size();i++)
+39         \{
+40             respues+=preguntas[i]->getRespuesta()+\textcolor{stringliteral}{"\(\backslash\)t"};
+41         \}
+42         myfile << 1900 + parts->tm\_year  << \textcolor{stringliteral}{"\_"};
+43         myfile << 1    + parts->tm\_mon   << \textcolor{stringliteral}{"\_"};
+44         myfile <<        parts->tm\_mday  << \textcolor{stringliteral}{"\(\backslash\)t"};
+45         myfile << respues <<\textcolor{stringliteral}{"\(\backslash\)n"};
+46         myfile.close();
+47         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+48     \}
+49     \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"No se puede guardar"};
+50     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+51 \}
+\end{DoxyCode}
+
+
+Gráfico de llamadas a esta función\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cuestionario_ab8cf9b63d66a3ab624a2ff0b9f854773_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Cuestionario@{Cuestionario}!hacer\-Preguntas@{hacer\-Preguntas}}
+\index{hacer\-Preguntas@{hacer\-Preguntas}!Cuestionario@{Cuestionario}}
+\subsubsection[{hacer\-Preguntas}]{\setlength{\rightskip}{0pt plus 5cm}void Cuestionario\-::hacer\-Preguntas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cuestionario_ae79115ce61bd16dbd5850756035aa2b2}
+
+
+Definición en la línea 53 del archivo Cuestionario.\-cpp.
+
+
+\begin{DoxyCode}
+54 \{
+55     \textcolor{keywordtype}{int} numeroPreguntas = this->preguntas.size();
+56 \textcolor{comment}{//  cout<<preguntas.size()<<"eltama~no\(\backslash\)n";}
+57     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} contadorPreguntas=0;contadorPreguntas<numeroPreguntas;contadorPreguntas++)
+58     \{
+59         preguntas[contadorPreguntas]->imprimirPregunta();
+60         preguntas[contadorPreguntas]->responder();
+61     \}
+62 \}
+\end{DoxyCode}
+
+
+Gráfico de llamadas a esta función\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cuestionario_ae79115ce61bd16dbd5850756035aa2b2_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-Integrador2/{\bf Cuestionario.\-h}\item 
+Proyecto\-Integrador2/{\bf Cuestionario.\-cpp}\end{DoxyCompactItemize}

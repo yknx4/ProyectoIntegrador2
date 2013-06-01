@@ -1,0 +1,172 @@
+\section{Referencia de la Clase Pregunta\-Opc\-Mult}
+\label{class_pregunta_opc_mult}\index{Pregunta\-Opc\-Mult@{Pregunta\-Opc\-Mult}}
+
+
+{\ttfamily \#include $<$Preguntas.\-h$>$}
+
+
+
+Diagrama de herencias de Pregunta\-Opc\-Mult
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_pregunta_opc_mult__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración para Pregunta\-Opc\-Mult\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_pregunta_opc_mult__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Pregunta\-Opc\-Mult} (std\-::string, std\-::string)
+\item 
+{\bf $\sim$\-Pregunta\-Opc\-Mult} ()
+\item 
+void {\bf responder} ()
+\item 
+void {\bf imprimir\-Pregunta} ()
+\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 30 del archivo Preguntas.\-h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Pregunta\-Opc\-Mult@{Pregunta\-Opc\-Mult}!Pregunta\-Opc\-Mult@{Pregunta\-Opc\-Mult}}
+\index{Pregunta\-Opc\-Mult@{Pregunta\-Opc\-Mult}!PreguntaOpcMult@{Pregunta\-Opc\-Mult}}
+\subsubsection[{Pregunta\-Opc\-Mult}]{\setlength{\rightskip}{0pt plus 5cm}Pregunta\-Opc\-Mult\-::\-Pregunta\-Opc\-Mult (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{input, }
+\item[{std\-::string}]{opci}
+\end{DoxyParamCaption}
+)}\label{class_pregunta_opc_mult_a1da96a9953f5f8dae50114edb06ff23e}
+
+
+Definición en la línea 73 del archivo Preguntas.\-cpp.
+
+
+\begin{DoxyCode}
+73                                                                 : Pregunta(input)
+74 \{
+75     \textcolor{comment}{//opciones=opci;}
+76     \textcolor{keywordtype}{size\_t} noOpc;
+77     numeroOpciones=0;
+78     \textcolor{keywordtype}{string} container=\textcolor{stringliteral}{""};
+79     \textcolor{keywordflow}{for} (noOpc=0;noOpc<opci.length();noOpc++)
+80     \{
+81         \textcolor{keywordflow}{if} (opci[noOpc]==\textcolor{charliteral}{'\(\backslash\)t'} || noOpc==(opci.length()-1))
+82         \{
+83             numeroOpciones++;
+84             opcions.push\_back(container);
+85             container=\textcolor{stringliteral}{""};
+86             \textcolor{keywordflow}{continue};
+87         \}
+88         container+=opci[noOpc];
+89     \}
+90     \textcolor{comment}{//cout<<opci.length()<<"lasopcios\(\backslash\)n";}
+91     \textcolor{comment}{//numeroOpciones=opci.length();}
+92 \}
+\end{DoxyCode}
+\index{Pregunta\-Opc\-Mult@{Pregunta\-Opc\-Mult}!$\sim$\-Pregunta\-Opc\-Mult@{$\sim$\-Pregunta\-Opc\-Mult}}
+\index{$\sim$\-Pregunta\-Opc\-Mult@{$\sim$\-Pregunta\-Opc\-Mult}!PreguntaOpcMult@{Pregunta\-Opc\-Mult}}
+\subsubsection[{$\sim$\-Pregunta\-Opc\-Mult}]{\setlength{\rightskip}{0pt plus 5cm}Pregunta\-Opc\-Mult\-::$\sim$\-Pregunta\-Opc\-Mult (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_pregunta_opc_mult_a533a24f45ccef0aed14aea03b0d7b85f}
+
+
+Definición en la línea 34 del archivo Preguntas.\-h.
+
+
+\begin{DoxyCode}
+34 \{\};
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Pregunta\-Opc\-Mult@{Pregunta\-Opc\-Mult}!imprimir\-Pregunta@{imprimir\-Pregunta}}
+\index{imprimir\-Pregunta@{imprimir\-Pregunta}!PreguntaOpcMult@{Pregunta\-Opc\-Mult}}
+\subsubsection[{imprimir\-Pregunta}]{\setlength{\rightskip}{0pt plus 5cm}void Pregunta\-Opc\-Mult\-::imprimir\-Pregunta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_pregunta_opc_mult_a2c87b73c52b7f65956f4a3bcb55ac719}
+
+
+Reimplementado de {\bf Pregunta} \doxyref{}{p.}{class_pregunta_ac97860f3cd3d11c415e8cde6e529d7b9}.
+
+
+
+Definición en la línea 115 del archivo Preguntas.\-cpp.
+
+
+\begin{DoxyCode}
+116 \{
+117     \_\_super::imprimirPregunta();
+118     cout<<endl;
+119 
+120     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<numeroOpciones;i++)
+121     \{
+122         cout<<char(i+97)<<\textcolor{stringliteral}{") "}<<opcions[i]<<\textcolor{stringliteral}{"\(\backslash\)t"};
+123     \}
+124     cout<<\textcolor{stringliteral}{"\(\backslash\)n"};
+125 \}
+\end{DoxyCode}
+\index{Pregunta\-Opc\-Mult@{Pregunta\-Opc\-Mult}!responder@{responder}}
+\index{responder@{responder}!PreguntaOpcMult@{Pregunta\-Opc\-Mult}}
+\subsubsection[{responder}]{\setlength{\rightskip}{0pt plus 5cm}void Pregunta\-Opc\-Mult\-::responder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_pregunta_opc_mult_aaae8febba0ce55b1b2682c8093f6b594}
+
+
+Reimplementado de {\bf Pregunta} \doxyref{}{p.}{class_pregunta_aaf28e3a833e98b6b8bbd9267311a1ad2}.
+
+
+
+Definición en la línea 94 del archivo Preguntas.\-cpp.
+
+
+\begin{DoxyCode}
+95 \{
+96     \textcolor{keywordtype}{string} opciones=\textcolor{stringliteral}{""};
+97     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < numeroOpciones; j++)
+98     \{
+99         opciones+=char(j+97);
+100     \}
+101     \textcolor{keywordtype}{char} opc = \_getch();
+102     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0;i<opciones.length();i++)
+103     \{
+104         \textcolor{keywordflow}{if} (opciones[i] == opc)
+105         \{
+106             respuesta[0]=opc;
+107             \textcolor{keywordflow}{return};
+108         \}
+109         
+110     \}
+111     responder();
+112     
+113 \}
+\end{DoxyCode}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-Integrador2/{\bf Preguntas.\-h}\item 
+Proyecto\-Integrador2/{\bf Preguntas.\-cpp}\end{DoxyCompactItemize}

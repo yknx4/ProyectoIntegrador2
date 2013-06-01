@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Proyecto Integrador - 2do Semestre: Referencia del Archivo ProyectoIntegrador2/Encriptador.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Proyecto Integrador - 2do Semestre
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_encriptador_8cpp.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo Encriptador.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="stdafx_8h_source.html">stdafx.h</a>&quot;</code><br/>
+<code>#include &lt;thread&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;fstream&gt;</code><br/>
+<code>#include &lt;conio.h&gt;</code><br/>
+<code>#include &lt;chrono&gt;</code><br/>
+<code>#include &quot;<a class="el" href="_encriptador_8h_source.html">Encriptador.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Dependencia gráfica adjunta para Encriptador.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="_encriptador_8cpp__incl.png" border="0" usemap="#_proyecto_integrador2_2_encriptador_8cpp" alt=""/></div>
+<map name="_proyecto_integrador2_2_encriptador_8cpp" id="_proyecto_integrador2_2_encriptador_8cpp">
+<area shape="rect" id="node2" href="stdafx_8h.html" title="stdafx.h" alt="" coords="163,171,231,197"/><area shape="rect" id="node13" href="_encriptador_8h.html" title="Encriptador.h" alt="" coords="431,96,529,123"/><area shape="rect" id="node3" href="targetver_8h.html" title="targetver.h" alt="" coords="17,245,100,272"/></map>
+</div>
+</div>
+<p><a href="_encriptador_8cpp_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a514eeb9d37c47513308d43f3ddcb5d66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_encriptador_8cpp.html#a514eeb9d37c47513308d43f3ddcb5d66">validarAcceso</a> ()</td></tr>
+<tr class="separator:a514eeb9d37c47513308d43f3ddcb5d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a class="anchor" id="a514eeb9d37c47513308d43f3ddcb5d66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool validarAcceso </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_encriptador_8cpp_source.html#l00110">110</a> del archivo <a class="el" href="_encriptador_8cpp_source.html">Encriptador.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="class_encriptador.html">Encriptador</a> crypt(<span class="stringliteral">&quot;RSeCDf23g4ihjlk6auvMLxpQUmAEBwzyFGontJHIqKr7 Ts8ON9PXVWZ0Y15bcd&quot;</span>, <span class="stringliteral">&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 &quot;</span>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="class_validador.html">Validador</a> valid(<span class="stringliteral">&quot;clave.txt&quot;</span>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">string</span> clave = <span class="stringliteral">&quot;pablito clavo un clavito en la calva de un calvito&quot;</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">//cout&lt;&lt;&quot;Buscando el archivo&quot;&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">//if(valid.encontrado)cout&lt;&lt;&quot;Archivo encontrado en &quot; &lt;&lt; valid.path&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">//cout&lt;&lt;crypt.Cifrar(clave)&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">bool</span> validacion =valid.esValido(crypt.Cifrar(clave));</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (validacion)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">//      Acceso=true;</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="comment">//cout&lt;&lt;&quot;Acceso Permitido&quot;&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">//      Acceso=false;</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;Acceso Denegado&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//cout&lt;&lt;&quot;Contenido del archivo: &quot;&lt;&lt;valid.getContent()&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">//  cout&lt;&lt;&quot;Contenido del archivo decifrado: &quot; &lt;&lt; crypt.Decifrar(valid.content)&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">//  cout&lt;&lt;&quot;Clave correcta: &quot; &lt;&lt; clave&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Gráfico de llamadas para esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="_encriptador_8cpp_a514eeb9d37c47513308d43f3ddcb5d66_cgraph.png" border="0" usemap="#_encriptador_8cpp_a514eeb9d37c47513308d43f3ddcb5d66_cgraph" alt=""/></div>
+<map name="_encriptador_8cpp_a514eeb9d37c47513308d43f3ddcb5d66_cgraph" id="_encriptador_8cpp_a514eeb9d37c47513308d43f3ddcb5d66_cgraph">
+<area shape="rect" id="node2" href="class_validador.html#aa28aeee63d24ac104492eac4a24ef215" title="Validador::esValido" alt="" coords="158,5,293,32"/><area shape="rect" id="node4" href="class_encriptador.html#aec4f517051f7255e45a6db0f90e21bd4" title="Encriptador::Cifrar" alt="" coords="162,56,289,83"/><area shape="rect" id="node3" href="class_validador.html#af37049c367add17c5f52e938608251f5" title="Validador::getContent" alt="" coords="341,5,488,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="_encriptador_8cpp_a514eeb9d37c47513308d43f3ddcb5d66_icgraph.png" border="0" usemap="#_encriptador_8cpp_a514eeb9d37c47513308d43f3ddcb5d66_icgraph" alt=""/></div>
+<map name="_encriptador_8cpp_a514eeb9d37c47513308d43f3ddcb5d66_icgraph" id="_encriptador_8cpp_a514eeb9d37c47513308d43f3ddcb5d66_icgraph">
+<area shape="rect" id="node2" href="_proyecto_integrador2_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="157,5,219,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_dd295ae4e78f04c695809609e0076f06.html">ProyectoIntegrador2</a></li><li class="navelem"><a class="el" href="_encriptador_8cpp.html">Encriptador.cpp</a></li>
+    <li class="footer">Generado el Viernes, 31 de Mayo de 2013 19:56:28 para Proyecto Integrador - 2do Semestre por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

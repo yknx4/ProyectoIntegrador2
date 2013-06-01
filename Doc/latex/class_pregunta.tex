@@ -1,0 +1,171 @@
+\section{Referencia de la Clase Pregunta}
+\label{class_pregunta}\index{Pregunta@{Pregunta}}
+
+
+{\ttfamily \#include $<$Preguntas.\-h$>$}
+
+
+
+Diagrama de herencias de Pregunta
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{class_pregunta__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Pregunta} (std\-::string)
+\item 
+{\bf $\sim$\-Pregunta} ()
+\item 
+virtual void {\bf responder} ()
+\item 
+virtual void {\bf imprimir\-Pregunta} ()
+\item 
+std\-::string {\bf get\-Respuesta} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+char {\bf respuesta} [512]
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 6 del archivo Preguntas.\-h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Pregunta@{Pregunta}!Pregunta@{Pregunta}}
+\index{Pregunta@{Pregunta}!Pregunta@{Pregunta}}
+\subsubsection[{Pregunta}]{\setlength{\rightskip}{0pt plus 5cm}Pregunta\-::\-Pregunta (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{pregunta}
+\end{DoxyParamCaption}
+)}\label{class_pregunta_a24d53ffa52bdb9082366a415dec538d4}
+
+
+Definición en la línea 9 del archivo Preguntas.\-cpp.
+
+
+\begin{DoxyCode}
+10 \{
+11     this->pregunta=pregunta;
+12     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 512; i++)
+13     \{
+14         respuesta[i]=\textcolor{charliteral}{'\(\backslash\)0'};
+15     \}
+16 \}
+\end{DoxyCode}
+\index{Pregunta@{Pregunta}!$\sim$\-Pregunta@{$\sim$\-Pregunta}}
+\index{$\sim$\-Pregunta@{$\sim$\-Pregunta}!Pregunta@{Pregunta}}
+\subsubsection[{$\sim$\-Pregunta}]{\setlength{\rightskip}{0pt plus 5cm}Pregunta\-::$\sim$\-Pregunta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_pregunta_a644894e8c4158aebd9e4ce443c59a0e4}
+
+
+Definición en la línea 10 del archivo Preguntas.\-h.
+
+
+\begin{DoxyCode}
+10 \{\};
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Pregunta@{Pregunta}!get\-Respuesta@{get\-Respuesta}}
+\index{get\-Respuesta@{get\-Respuesta}!Pregunta@{Pregunta}}
+\subsubsection[{get\-Respuesta}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Pregunta\-::get\-Respuesta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pregunta_af7a75dd736d793e35133b0c50fbedb5f}
+
+
+Definición en la línea 41 del archivo Preguntas.\-cpp.
+
+
+\begin{DoxyCode}
+42 \{
+43     \textcolor{keywordflow}{return} *(\textcolor{keyword}{new} string(respuesta));
+44 \}
+\end{DoxyCode}
+\index{Pregunta@{Pregunta}!imprimir\-Pregunta@{imprimir\-Pregunta}}
+\index{imprimir\-Pregunta@{imprimir\-Pregunta}!Pregunta@{Pregunta}}
+\subsubsection[{imprimir\-Pregunta}]{\setlength{\rightskip}{0pt plus 5cm}void Pregunta\-::imprimir\-Pregunta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_pregunta_ac97860f3cd3d11c415e8cde6e529d7b9}
+
+
+Reimplementado en {\bf Pregunta\-Opc\-Mult} \doxyref{}{p.}{class_pregunta_opc_mult_a2c87b73c52b7f65956f4a3bcb55ac719} y {\bf Pregunta5a10} \doxyref{}{p.}{class_pregunta5a10_a07d0d7ba39af31469fdfc0a7f4c39e7d}.
+
+
+
+Definición en la línea 36 del archivo Preguntas.\-cpp.
+
+
+\begin{DoxyCode}
+37 \{
+38     cout<<\textcolor{stringliteral}{"\(\backslash\)n>> "}<<pregunta<<\textcolor{stringliteral}{": "};
+39 \}
+\end{DoxyCode}
+\index{Pregunta@{Pregunta}!responder@{responder}}
+\index{responder@{responder}!Pregunta@{Pregunta}}
+\subsubsection[{responder}]{\setlength{\rightskip}{0pt plus 5cm}void Pregunta\-::responder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_pregunta_aaf28e3a833e98b6b8bbd9267311a1ad2}
+
+
+Reimplementado en {\bf Pregunta\-Opc\-Mult} \doxyref{}{p.}{class_pregunta_opc_mult_aaae8febba0ce55b1b2682c8093f6b594} y {\bf Pregunta5a10} \doxyref{}{p.}{class_pregunta5a10_aae1286ae330a08f99bc2edf4bc6b1dd3}.
+
+
+
+Definición en la línea 18 del archivo Preguntas.\-cpp.
+
+
+\begin{DoxyCode}
+19 \{
+20     \textcolor{comment}{//cin.ignore();}
+21 \textcolor{comment}{//  this->imprimirPregunta();}
+22     cin.getline(respuesta,512);
+23     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<512;i++)
+24     \{
+25         \textcolor{keywordflow}{if} (respuesta[i]==\textcolor{charliteral}{'\(\backslash\)0'})
+26         \{
+27             \textcolor{keywordflow}{break};
+28         \}
+29         \textcolor{keywordflow}{if} (respuesta[i]==\textcolor{charliteral}{'\(\backslash\)t'})
+30         \{
+31             respuesta[i]=\textcolor{charliteral}{' '};
+32         \}
+33     \}
+34 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Pregunta@{Pregunta}!respuesta@{respuesta}}
+\index{respuesta@{respuesta}!Pregunta@{Pregunta}}
+\subsubsection[{respuesta}]{\setlength{\rightskip}{0pt plus 5cm}char Pregunta\-::respuesta[512]\hspace{0.3cm}{\ttfamily [protected]}}\label{class_pregunta_a4143cf5905f04f96c035ad12dd5dc9d2}
+
+
+Definición en la línea 17 del archivo Preguntas.\-h.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-Integrador2/{\bf Preguntas.\-h}\item 
+Proyecto\-Integrador2/{\bf Preguntas.\-cpp}\end{DoxyCompactItemize}
