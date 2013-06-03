@@ -51,6 +51,8 @@ int _tmain(int argc, _TCHAR* argv[])
 		this_thread::sleep_for(std::chrono::milliseconds(3000));//El proceso duerme por 3 segundos antes de volver a validar
 	}
 	hiloEjecucion.detach(); //Se destruye el hilo de ejecución de AplicacionDeEncuesta despues de salir del ciclo
+	/*string lala[10];
+	lala->size();*/
 	return 0;
 }
 

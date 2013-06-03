@@ -9,10 +9,7 @@ using namespace std;
 Pregunta::Pregunta( std::string pregunta )
 {
 	this->pregunta=pregunta;
-	for (int i = 0; i < 512; i++)
-	{
-		respuesta[i]='\0';
-	}
+	memset(respuesta,'\0',512);
 }
 
 void Pregunta::responder()
@@ -53,12 +50,14 @@ void Pregunta5a10::responder()
 //	imprimirPregunta();
 __super::responder();
 //cout<<respuesta<<"res\n";
+
 istringstream ss(respuesta);
 int x;
-if (!(ss >> x) || (x>10 || x<5) || respuesta[2]!='\0') {
+if (!(ss >> x) || (x>10 || x<5) || respuesta[2]!='\0' ) {
 	
-	
+	//cin.ignore();
 	cout<<"Numero Invalido\n";
+	//ss.ignore();
 	responder();
 }
 }

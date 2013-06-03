@@ -110,7 +110,7 @@ using namespace std;
 bool validarAcceso()
 {
 	Encriptador crypt("RSeCDf23g4ihjlk6auvMLxpQUmAEBwzyFGontJHIqKr7 Ts8ON9PXVWZ0Y15bcd", "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ");
-	Validador valid("clave.txt");
+	Validador valid("clave.bin");
 	string clave = "pablito clavo un clavito en la calva de un calvito";
 	//cout<<"Buscando el archivo"<<endl;
 	//if(valid.encontrado)cout<<"Archivo encontrado en " << valid.path<<endl;

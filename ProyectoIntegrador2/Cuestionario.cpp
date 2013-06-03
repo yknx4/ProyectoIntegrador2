@@ -8,6 +8,8 @@
 #include <chrono>
 #include <ctime>
 #include <sstream>
+#define SEPARADOR_DATO char(31)
+#define SEPARADOR_GRUPO char(29)
 using namespace std;
 Cuestionario::Cuestionario()
 {
@@ -24,7 +26,6 @@ bool Cuestionario::GuardarCuestionario()
 	typedef std::chrono::system_clock Clock;
 	auto now = Clock::now();
 	std::time_t now_c = Clock::to_time_t(now);
-
 	struct tm *parts = std::localtime(&now_c);
 	int anio= 1900 + parts->tm_year;
 	int month= 1    + parts->tm_mon;
@@ -52,6 +53,7 @@ bool Cuestionario::GuardarCuestionario()
 
 void Cuestionario::hacerPreguntas()
 {
+	
 	int numeroPreguntas = this->preguntas.size();
 //	cout<<preguntas.size()<<"eltama~no\n";
 	for (int contadorPreguntas=0;contadorPreguntas<numeroPreguntas;contadorPreguntas++)
