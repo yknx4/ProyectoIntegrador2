@@ -1,0 +1,159 @@
+\section{Menu Class Reference}
+\label{class_menu}\index{Menu@{Menu}}
+
+
+{\ttfamily \#include $<$Menu.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Menu} ()
+\item 
+{\bf Menu} (vector$<$ string $>$ {\bf opciones})
+\item 
+int {\bf Seleccionar\-Opcion} ()
+\item 
+void {\bf add\-Opcion} (string opcion)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ string $>$ {\bf opciones}
+\item 
+int {\bf opc}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file Menu.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\subsubsection[{Menu}]{\setlength{\rightskip}{0pt plus 5cm}Menu\-::\-Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_menu_ad466dd83355124a6ed958430450bfe94}
+
+
+Definition at line 9 of file Menu.\-cpp.
+
+
+\begin{DoxyCode}
+10 \{
+11     opc=0;
+12 \}
+\end{DoxyCode}
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\subsubsection[{Menu}]{\setlength{\rightskip}{0pt plus 5cm}Menu\-::\-Menu (
+\begin{DoxyParamCaption}
+\item[{vector$<$ string $>$}]{opciones}
+\end{DoxyParamCaption}
+)}\label{class_menu_a9f671c44dddc15c1fe6684a78ee9a0b9}
+
+
+Definition at line 14 of file Menu.\-cpp.
+
+
+\begin{DoxyCode}
+15 \{
+16     Menu();
+17     this->opciones=opciones;
+18 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Menu@{Menu}!add\-Opcion@{add\-Opcion}}
+\index{add\-Opcion@{add\-Opcion}!Menu@{Menu}}
+\subsubsection[{add\-Opcion}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\-::add\-Opcion (
+\begin{DoxyParamCaption}
+\item[{string}]{opcion}
+\end{DoxyParamCaption}
+)}\label{class_menu_ae08a622a2d8ff638bba3f519f3e8365b}
+
+
+Definition at line 55 of file Menu.\-cpp.
+
+
+\begin{DoxyCode}
+56 \{
+57     opciones.push\_back(opcion);
+58 \}
+\end{DoxyCode}
+\index{Menu@{Menu}!Seleccionar\-Opcion@{Seleccionar\-Opcion}}
+\index{Seleccionar\-Opcion@{Seleccionar\-Opcion}!Menu@{Menu}}
+\subsubsection[{Seleccionar\-Opcion}]{\setlength{\rightskip}{0pt plus 5cm}int Menu\-::\-Seleccionar\-Opcion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_menu_a26b1166a834792bd13e4d0aa06314471}
+
+
+Definition at line 20 of file Menu.\-cpp.
+
+
+\begin{DoxyCode}
+21 \{
+22     \textcolor{comment}{//int opc=0; //opcion del Menu}
+23     \textcolor{keywordflow}{while} (opc!=(opciones.size()+1))\textcolor{comment}{//Imprimir el Menu hasta que se seleccione salir(opcion 3)}
+24     \{
+25         \textcolor{keywordflow}{do}\{
+26             system(\textcolor{stringliteral}{"cls"});
+27             \textcolor{comment}{//cout << "------------------------ Menu -------------------------" << endl ;}
+28             cout << \textcolor{stringliteral}{"-------Elija la opcion que desea realizar---------: "} << endl << endl ;
+29             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < opciones.size(); i++)
+30             \{
+31                 cout<<(i+1)<<\textcolor{stringliteral}{".- "}<<opciones[i]<<\textcolor{stringliteral}{"."}<<endl;
+32             \}
+33             cout << (opciones.size()+1) <<\textcolor{stringliteral}{".- Salir."} << endl ;
+34             cout << \textcolor{stringliteral}{"Seleccionado: "};
+35             \textcolor{comment}{//cin.ignore();}
+36             opc = \_getche()-48;
+37             \textcolor{keywordflow}{if}( opc<1 || opc >(\textcolor{keywordtype}{int})(opciones.size()+1))
+38             \{
+39                 cout << \textcolor{stringliteral}{"Ese numero no es una opcion, vuelve a ingresar tu opcion."} <<endl;
+40                 opc=0;
+41 
+42                 \textcolor{comment}{//system("pause");}
+43             \}
+44             \textcolor{keywordflow}{else}
+45             \{
+46                 \textcolor{comment}{//6cin.ignore();}
+47                 \textcolor{keywordflow}{return} opc;
+48             \}
+49         \}\textcolor{keywordflow}{while}(\textcolor{keyword}{true}); \textcolor{comment}{//condicional}
+50         \textcolor{comment}{//cout << "Switch para las opciones";}
+51     \}
+52     \textcolor{keywordflow}{return} -1;
+53 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Menu@{Menu}!opc@{opc}}
+\index{opc@{opc}!Menu@{Menu}}
+\subsubsection[{opc}]{\setlength{\rightskip}{0pt plus 5cm}int Menu\-::opc\hspace{0.3cm}{\ttfamily [private]}}\label{class_menu_adc288494315cce3604f06e521d13b0e4}
+
+
+Definition at line 22 of file Menu.\-h.
+
+\index{Menu@{Menu}!opciones@{opciones}}
+\index{opciones@{opciones}!Menu@{Menu}}
+\subsubsection[{opciones}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$string$>$ Menu\-::opciones\hspace{0.3cm}{\ttfamily [private]}}\label{class_menu_ab0be6758428c7115eca65679112f1d65}
+
+
+Definition at line 21 of file Menu.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-Integrador2/{\bf Menu.\-h}\item 
+Proyecto\-Integrador2/{\bf Menu.\-cpp}\end{DoxyCompactItemize}

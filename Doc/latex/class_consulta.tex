@@ -1,0 +1,265 @@
+\section{Consulta Class Reference}
+\label{class_consulta}\index{Consulta@{Consulta}}
+
+
+{\ttfamily \#include $<$Consulta.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Consulta} ()
+\item 
+{\bf Consulta} (vector$<$ {\bf Pregunta} $\ast$ $>$ {\bf preguntas})
+\item 
+{\bf $\sim$\-Consulta} ()
+\item 
+void {\bf add\-Pregunta} ({\bf Pregunta} $\ast$input)
+\item 
+bool {\bf leer\-Archivo} (string filename)
+\item 
+void {\bf leer\-Datos} ()
+\item 
+void {\bf imprimir\-Datos} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ifstream {\bf archivo}
+\item 
+vector$<$ vector$<$ string $>$ $>$ {\bf Registros}
+\item 
+vector$<$ {\bf Pregunta} $\ast$ $>$ {\bf preguntas}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Consulta.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Consulta@{Consulta}!Consulta@{Consulta}}
+\index{Consulta@{Consulta}!Consulta@{Consulta}}
+\subsubsection[{Consulta}]{\setlength{\rightskip}{0pt plus 5cm}Consulta\-::\-Consulta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_consulta_a941db28c9c5f5606fcbfcbd76a4381a7}
+
+
+Definition at line 69 of file Consulta.\-cpp.
+
+
+\begin{DoxyCode}
+70 \{
+71 
+72 \}
+\end{DoxyCode}
+\index{Consulta@{Consulta}!Consulta@{Consulta}}
+\index{Consulta@{Consulta}!Consulta@{Consulta}}
+\subsubsection[{Consulta}]{\setlength{\rightskip}{0pt plus 5cm}Consulta\-::\-Consulta (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Pregunta} $\ast$ $>$}]{preguntas}
+\end{DoxyParamCaption}
+)}\label{class_consulta_a57114e4d0b3844a02825595fbc702057}
+
+
+Definition at line 74 of file Consulta.\-cpp.
+
+
+\begin{DoxyCode}
+75 \{
+76     this->preguntas=preguntas;
+77 \}
+\end{DoxyCode}
+\index{Consulta@{Consulta}!$\sim$\-Consulta@{$\sim$\-Consulta}}
+\index{$\sim$\-Consulta@{$\sim$\-Consulta}!Consulta@{Consulta}}
+\subsubsection[{$\sim$\-Consulta}]{\setlength{\rightskip}{0pt plus 5cm}Consulta\-::$\sim$\-Consulta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_consulta_a619b1ed733470d7553a893227ae5884a}
+
+
+Definition at line 64 of file Consulta.\-cpp.
+
+
+\begin{DoxyCode}
+65 \{
+66 
+67 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Consulta@{Consulta}!add\-Pregunta@{add\-Pregunta}}
+\index{add\-Pregunta@{add\-Pregunta}!Consulta@{Consulta}}
+\subsubsection[{add\-Pregunta}]{\setlength{\rightskip}{0pt plus 5cm}void Consulta\-::add\-Pregunta (
+\begin{DoxyParamCaption}
+\item[{{\bf Pregunta} $\ast$}]{input}
+\end{DoxyParamCaption}
+)}\label{class_consulta_a8654ef3588e92c6907646cd0093ca67f}
+
+
+Definition at line 9 of file Consulta.\-cpp.
+
+
+\begin{DoxyCode}
+10 \{
+11     preguntas.push\_back(input);
+12 \}
+\end{DoxyCode}
+\index{Consulta@{Consulta}!imprimir\-Datos@{imprimir\-Datos}}
+\index{imprimir\-Datos@{imprimir\-Datos}!Consulta@{Consulta}}
+\subsubsection[{imprimir\-Datos}]{\setlength{\rightskip}{0pt plus 5cm}void Consulta\-::imprimir\-Datos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_consulta_a56df832e41c410cfe15b6fd2a0f82036}
+
+
+Definition at line 48 of file Consulta.\-cpp.
+
+
+\begin{DoxyCode}
+49 \{
+50     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < Registros.size(); i++)
+51     \{
+52         cout << \textcolor{stringliteral}{"\(\backslash\)nCuestionario #"}<<i+1<<endl;
+53         cout<<\textcolor{stringliteral}{"Fecha: "}<<Registros[i][0]<<endl;
+54         \textcolor{comment}{//cout<<preguntas.size()<<endl;}
+55         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < preguntas.size(); j++)
+56         \{
+57             preguntas[j]->imprimirPregunta();
+58             cout << Registros[i][j+1] << endl;
+59         \}
+60 
+61     \}
+62 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consulta_a56df832e41c410cfe15b6fd2a0f82036_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Consulta@{Consulta}!leer\-Archivo@{leer\-Archivo}}
+\index{leer\-Archivo@{leer\-Archivo}!Consulta@{Consulta}}
+\subsubsection[{leer\-Archivo}]{\setlength{\rightskip}{0pt plus 5cm}bool Consulta\-::leer\-Archivo (
+\begin{DoxyParamCaption}
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)}\label{class_consulta_a962f20731f95b0c0e07118da310d8fab}
+
+
+Definition at line 14 of file Consulta.\-cpp.
+
+
+\begin{DoxyCode}
+15 \{
+16     archivo.open(filename,ios::binary|ios::in);
+17     \textcolor{comment}{//fs.read(buffer,1000000);}
+18     \textcolor{keywordflow}{if}(!archivo)\{
+19         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+20     \}
+21     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+22 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consulta_a962f20731f95b0c0e07118da310d8fab_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Consulta@{Consulta}!leer\-Datos@{leer\-Datos}}
+\index{leer\-Datos@{leer\-Datos}!Consulta@{Consulta}}
+\subsubsection[{leer\-Datos}]{\setlength{\rightskip}{0pt plus 5cm}void Consulta\-::leer\-Datos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_consulta_a559e96b607fd1ac665628432f399e0c5}
+
+
+Definition at line 24 of file Consulta.\-cpp.
+
+
+\begin{DoxyCode}
+25 \{
+26     vector<string> Respuestas;
+27     \textcolor{keywordtype}{string} temporal=\textcolor{stringliteral}{""};
+28     \textcolor{keywordtype}{char} buffer;
+29     \textcolor{keywordflow}{while} (archivo.good())
+30     \{
+31         buffer=archivo.get();
+32         \textcolor{keywordflow}{if}(buffer==\textcolor{charliteral}{'\(\backslash\)t'})\{
+33             Respuestas.push\_back(temporal);
+34             \textcolor{comment}{//cout<<temporal<<endl;}
+35             temporal=\textcolor{stringliteral}{""};
+36             \textcolor{keywordflow}{continue};
+37         \}
+38         \textcolor{keywordflow}{if}(buffer==\textcolor{charliteral}{'\(\backslash\)n'})\{
+39             Registros.push\_back(Respuestas);
+40             Respuestas.clear();
+41             \textcolor{comment}{//cout<<"Nuevo Registro"<<endl;}
+42             \textcolor{keywordflow}{continue};
+43         \}
+44         temporal+=buffer;
+45     \}
+46 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consulta_a559e96b607fd1ac665628432f399e0c5_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Consulta@{Consulta}!archivo@{archivo}}
+\index{archivo@{archivo}!Consulta@{Consulta}}
+\subsubsection[{archivo}]{\setlength{\rightskip}{0pt plus 5cm}ifstream Consulta\-::archivo\hspace{0.3cm}{\ttfamily [private]}}\label{class_consulta_aee038d050fa188962105e79e4680f402}
+
+
+Definition at line 25 of file Consulta.\-h.
+
+\index{Consulta@{Consulta}!preguntas@{preguntas}}
+\index{preguntas@{preguntas}!Consulta@{Consulta}}
+\subsubsection[{preguntas}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Pregunta}$\ast$$>$ Consulta\-::preguntas\hspace{0.3cm}{\ttfamily [private]}}\label{class_consulta_a71abff7d94e9294e397319203433bb4d}
+
+
+Definition at line 27 of file Consulta.\-h.
+
+\index{Consulta@{Consulta}!Registros@{Registros}}
+\index{Registros@{Registros}!Consulta@{Consulta}}
+\subsubsection[{Registros}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$string$>$ $>$ Consulta\-::\-Registros\hspace{0.3cm}{\ttfamily [private]}}\label{class_consulta_a3b014f1cb3635323fea65437c4ba7535}
+
+
+Definition at line 26 of file Consulta.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-Integrador2/{\bf Consulta.\-h}\item 
+Proyecto\-Integrador2/{\bf Consulta.\-cpp}\end{DoxyCompactItemize}

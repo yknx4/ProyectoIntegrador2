@@ -1,35 +1,23 @@
-\section{Referencia del Archivo Proyecto\-Integrador2/\-Proyecto\-Integrador2.cpp}
+\section{Proyecto\-Integrador2/\-Proyecto\-Integrador2.cpp File Reference}
 \label{_proyecto_integrador2_8cpp}\index{Proyecto\-Integrador2/\-Proyecto\-Integrador2.\-cpp@{Proyecto\-Integrador2/\-Proyecto\-Integrador2.\-cpp}}
 {\ttfamily \#include \char`\"{}stdafx.\-h\char`\"{}}\\*
-{\ttfamily \#include $<$thread$>$}\\*
-{\ttfamily \#include $<$iostream$>$}\\*
-{\ttfamily \#include $<$chrono$>$}\\*
-{\ttfamily \#include \char`\"{}Encriptador.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}Preguntas.\-h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}Cuestionario.\-h\char`\"{}}\\*
-Dependencia grÃ¡fica adjunta para Proyecto\-Integrador2.\-cpp\-:
-\nopagebreak
+{\ttfamily \#include \char`\"{}Aplicacion.\-h\char`\"{}}\\*
+Include dependency graph for Proyecto\-Integrador2.\-cpp\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{_proyecto_integrador2_8cpp__incl}
 \end{center}
 \end{figure}
-\subsection*{Funciones}
+\subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bf Aplicacion\-De\-Encuesta} ()
-\begin{DoxyCompactList}\small\item\em Funcion para realizar encuesta. \end{DoxyCompactList}\item 
 int {\bf \-\_\-tmain} (int argc, \-\_\-\-T\-C\-H\-A\-R $\ast$argv[$\,$])
 \end{DoxyCompactItemize}
-\subsection*{Variables}
-\begin{DoxyCompactItemize}
-\item 
-bool {\bf final} =true
-\end{DoxyCompactItemize}
 
 
-\subsection{DocumentaciÃ³n de las funciones}
+\subsection{Function Documentation}
 \index{Proyecto\-Integrador2.\-cpp@{Proyecto\-Integrador2.\-cpp}!\-\_\-tmain@{\-\_\-tmain}}
 \index{\-\_\-tmain@{\-\_\-tmain}!ProyectoIntegrador2.cpp@{Proyecto\-Integrador2.\-cpp}}
 \subsubsection[{\-\_\-tmain}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-tmain (
@@ -40,45 +28,37 @@ bool {\bf final} =true
 )}\label{_proyecto_integrador2_8cpp_a353674c5af92be7fb389265cde4e5e03}
 
 
-DefiniciÃ³n en la lÃ­nea 44 del archivo Proyecto\-Integrador2.\-cpp.
+Definition at line 10 of file Proyecto\-Integrador2.\-cpp.
 
 
 \begin{DoxyCode}
-45 \{
-46     \textcolor{keywordflow}{if}(!validarAcceso())\textcolor{keywordflow}{return} 1; \textcolor{comment}{//Aqui se checa que la llave este puesta, si no esta se sale del
-       programa, sí si está continua la ejecución hiloEjecucion(AplicacionDeEncuesta); //Aqui se llama asíncronamente un
-       hilo de ejecución, llamando a la funcion previamente definida llamada "AplicacionDeEncuesta"
-    this\_thread::sleep\_for(std::chrono::milliseconds(3000)); //Se espera 3 segundos antes de entrar al
-       ciclo infinito
-    while (validarAcceso()&&final) //Este es el ciclo While que se realiza infinitamente, hasta que la
-       encuesta se termine (pues la variable final queda en 0 y dado que 1^0=0) 
-    \{
-        this\_thread::sleep\_for(std::chrono::milliseconds(3000));//El proceso duerme por 3 segundos antes de
-       volver a validar
-    \}
-    hiloEjecucion.detach(); //Se destruye el hilo de ejecución de AplicacionDeEncuesta despues de salir del
-       ciclo
-    return 0;
-\}
-}
-47     thread hiloEjecucion(AplicacionDeEncuesta); \textcolor{comment}{//Aqui se llama asíncronamente un hilo de ejecución, llamando a
-       la funcion previamente definida llamada "AplicacionDeEncuesta"}
-48     this\_thread::sleep\_for(std::chrono::milliseconds(3000)); \textcolor{comment}{//Se espera 3 segundos antes de entrar al
-       ciclo infinito}
-49     \textcolor{keywordflow}{while} (validarAcceso()&&\textcolor{keyword}{final}) \textcolor{comment}{//Este es el ciclo While que se realiza infinitamente, hasta que la
-       encuesta se termine (pues la variable final queda en 0 y dado que 1^0=0) }
-50     \{
-51         this\_thread::sleep\_for(std::chrono::milliseconds(3000));\textcolor{comment}{//El proceso duerme por 3 segundos antes de
-       volver a validar}
-52     \}
-53     hiloEjecucion.detach(); \textcolor{comment}{//Se destruye el hilo de ejecución de AplicacionDeEncuesta despues de salir del
-       ciclo}
-54     \textcolor{keywordflow}{return} 0;
-55 \}
+11 \{
+12     Aplicacion programa;
+13     vector<Pregunta*> preguntas; \textcolor{comment}{//Se crea un vector de punteros del tipo Pregunta, para almacenar las
+       preguntas de la encuesta}
+14     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Biblioteca"}));
+15     preguntas.push\_back(\textcolor{keyword}{new} PreguntaOpcMult(\textcolor{stringliteral}{"Seleccione una Opcion"},\textcolor{stringliteral}{"Alumno Docente Investigador    Otros"})
+      );
+16     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Carrera"}));
+17     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Semestre"}));
+18     preguntas.push\_back(\textcolor{keyword}{new} Pregunta5a10(\textcolor{stringliteral}{"Instalaciones (Comodidad, Limpieza, Iluminacion, Espacios)"}));
+19     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Que mejoras propone?"}));
+20     preguntas.push\_back(\textcolor{keyword}{new} Pregunta5a10(\textcolor{stringliteral}{"Acervo Bibliografico y documental (Actualizado, Suficiente)"}));
+21     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Que mejoras propone?"}));
+22     preguntas.push\_back(\textcolor{keyword}{new} Pregunta5a10(\textcolor{stringliteral}{"Herramientas y servicios de informacion (Prestamo de
+       computadoras, Consulta en el catalogo, Acceso a bases de datos)"}));
+23     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Que mejoras propone?"}));
+24     preguntas.push\_back(\textcolor{keyword}{new} Pregunta5a10(\textcolor{stringliteral}{"Servicios del Personal (Rapidez, Asesoria)"}));
+25     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Que mejoras propone?"}));
+26     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i=0;i<preguntas.size();i++) \{programa.addPregunta(preguntas[i]);\} \textcolor{comment}{//En este ciclo se añaden
+       todas las preguntas del vector al cuestionario}
+27     programa.iniciar();
+28     \textcolor{keywordflow}{return} 0;
+29 \}
 \end{DoxyCode}
 
 
-GrÃ¡fico de llamadas para esta funciÃ³n\-:
+Here is the call graph for this function\-:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -87,90 +67,4 @@ GrÃ¡fico de llamadas para esta funciÃ³n\-:
 \end{center}
 \end{figure}
 
-
-\index{Proyecto\-Integrador2.\-cpp@{Proyecto\-Integrador2.\-cpp}!Aplicacion\-De\-Encuesta@{Aplicacion\-De\-Encuesta}}
-\index{Aplicacion\-De\-Encuesta@{Aplicacion\-De\-Encuesta}!ProyectoIntegrador2.cpp@{Proyecto\-Integrador2.\-cpp}}
-\subsubsection[{Aplicacion\-De\-Encuesta}]{\setlength{\rightskip}{0pt plus 5cm}void Aplicacion\-De\-Encuesta (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\label{_proyecto_integrador2_8cpp_ac4de5207dab8c98dc16f6a43f5203772}
-
-
-Funcion para realizar encuesta. 
-
-En esta función se crean preguntas para el cuestionario, se añaden a este, despues se pasa a responderlas por la consola del comando, y finaliza intentado guardarlas. 
-
-DefiniciÃ³n en la lÃ­nea 17 del archivo Proyecto\-Integrador2.\-cpp.
-
-
-\begin{DoxyCode}
-17                            \{
-18     vector<Pregunta*> preguntas; \textcolor{comment}{//Se crea un vector de punteros del tipo Pregunta, para almacenar las
-       preguntas de la encuesta}
-19     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Biblioteca"}));
-20     preguntas.push\_back(\textcolor{keyword}{new} PreguntaOpcMult(\textcolor{stringliteral}{"Seleccione una Opcion"},\textcolor{stringliteral}{"Alumno Docente Investigador    Otros"})
-      );
-21     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Carrera"}));
-22     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Semestre"}));
-23     preguntas.push\_back(\textcolor{keyword}{new} Pregunta5a10(\textcolor{stringliteral}{"Instalaciones (Comodidad, Limpieza, Iluminacion, Espacios)"}));
-24     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Que mejoras propone?"}));
-25     preguntas.push\_back(\textcolor{keyword}{new} Pregunta5a10(\textcolor{stringliteral}{"Acervo Bibliografico y documental (Actualizado, Suficiente)"}));
-26     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Que mejoras propone?"}));
-27     preguntas.push\_back(\textcolor{keyword}{new} Pregunta5a10(\textcolor{stringliteral}{"Herramientas y servicios de informacion (Prestamo de
-       computadoras, Consulta en el catalogo, Acceso a bases de datos)"}));
-28     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Que mejoras propone?"}));
-29     preguntas.push\_back(\textcolor{keyword}{new} Pregunta5a10(\textcolor{stringliteral}{"Servicios del Personal (Rapidez, Asesoria)"}));
-30     preguntas.push\_back(\textcolor{keyword}{new} Pregunta(\textcolor{stringliteral}{"Que mejoras propone?"}));
-31     Cuestionario cuestionario;\textcolor{comment}{//se crea un cuestionario donde se añadiran las preguntas y se responderan,
-       también con este objeto se guardaran}
-32     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i=0;i<preguntas.size();i++) cuestionario.addPregunta(preguntas[i]); \textcolor{comment}{//En este ciclo se añaden
-       todas las preguntas del vector al cuestionario}
-33     cuestionario.hacerPreguntas();\textcolor{comment}{//con este metodo se imprimien y se contestan las preguntas del
-       cuestionario}
-34     \textcolor{keywordflow}{if} (cuestionario.GuardarCuestionario()) \textcolor{comment}{//Aqui intenta guardar el cuestionario en un archivo de texto
-       "respuestas.txt"}
-35     \{
-36         cout<<\textcolor{stringliteral}{"Encuesta guardada. Gracias :)"}; \textcolor{comment}{//si se logra guardar, entonces se imprime este mensaje}
-37         \textcolor{keyword}{final}=\textcolor{keyword}{false}; \textcolor{comment}{//se asigna esta variable global a 0, para que el hilo principal salga del ciclo y
-       entonces pueda cerrarse el programa}
-38     \}
-39     \textcolor{keywordflow}{else} cout<<\textcolor{stringliteral}{"Error al guardar la encuesta, Contacte al Encargado"}; \textcolor{comment}{//Se imprime este mensaje y no se
-       cierra el programa, cuando hay un error al guardar la encuesta}
-40     
-41 \}
-\end{DoxyCode}
-
-
-GrÃ¡fico de llamadas para esta funciÃ³n\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{_proyecto_integrador2_8cpp_ac4de5207dab8c98dc16f6a43f5203772_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-GrÃ¡fico de llamadas a esta funciÃ³n\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=278pt]{_proyecto_integrador2_8cpp_ac4de5207dab8c98dc16f6a43f5203772_icgraph}
-\end{center}
-\end{figure}
-
-
-
-
-\subsection{DocumentaciÃ³n de las variables}
-\index{Proyecto\-Integrador2.\-cpp@{Proyecto\-Integrador2.\-cpp}!final@{final}}
-\index{final@{final}!ProyectoIntegrador2.cpp@{Proyecto\-Integrador2.\-cpp}}
-\subsubsection[{final}]{\setlength{\rightskip}{0pt plus 5cm}bool final =true}\label{_proyecto_integrador2_8cpp_af28a838c358ed1f4ae4ebd0b702ea078}
-
-
-DefiniciÃ³n en la lÃ­nea 12 del archivo Proyecto\-Integrador2.\-cpp.
 

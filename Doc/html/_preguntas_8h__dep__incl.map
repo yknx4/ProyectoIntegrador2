@@ -1,7 +1,11 @@
 <map id="ProyectoIntegrador2/Preguntas.h" name="ProyectoIntegrador2/Preguntas.h">
-<area shape="rect" id="node2" href="$_cuestionario_8h.html" title="ProyectoIntegrador2\l/Cuestionario.h" alt="" coords="63,97,201,138"/>
-<area shape="rect" id="node3" href="$_cuestionario_8cpp.html" title="ProyectoIntegrador2\l/Cuestionario.cpp" alt="" coords="5,187,144,229"/>
-<area shape="rect" id="node5" href="$_preguntas_8cpp.html" title="ProyectoIntegrador2\l/Preguntas.cpp" alt="" coords="225,97,364,138"/>
-<area shape="rect" id="node4" href="$_proyecto_integrador2_8cpp.html" title="ProyectoIntegrador2\l/ProyectoIntegrador2.cpp" alt="" coords="267,187,433,229"/>
-<area shape="rect" id="node6" href="$stdafx_8cpp.html" title="ProyectoIntegrador2\l/stdafx.cpp" alt="" coords="439,97,577,138"/>
+<area shape="rect" id="node2" href="$_aplicacion_8cpp.html" title="ProyectoIntegrador2\l/Aplicacion.cpp" alt="" coords="184,278,323,319"/>
+<area shape="rect" id="node3" href="$_cuestionario_8h.html" title="ProyectoIntegrador2\l/Cuestionario.h" alt="" coords="131,97,270,138"/>
+<area shape="rect" id="node7" href="$_consulta_8h.html" title="ProyectoIntegrador2\l/Consulta.h" alt="" coords="344,97,483,138"/>
+<area shape="rect" id="node4" href="$_aplicacion_8h.html" title="ProyectoIntegrador2\l/Aplicacion.h" alt="" coords="238,187,376,229"/>
+<area shape="rect" id="node8" href="$_consulta_8cpp.html" title="ProyectoIntegrador2\l/Consulta.cpp" alt="" coords="451,187,590,229"/>
+<area shape="rect" id="node6" href="$_cuestionario_8cpp.html" title="ProyectoIntegrador2\l/Cuestionario.cpp" alt="" coords="24,187,163,229"/>
+<area shape="rect" id="node9" href="$_preguntas_8cpp.html" title="ProyectoIntegrador2\l/Preguntas.cpp" alt="" coords="664,97,803,138"/>
+<area shape="rect" id="node5" href="$_proyecto_integrador2_8cpp.html" title="ProyectoIntegrador2\l/ProyectoIntegrador2.cpp" alt="" coords="472,278,638,319"/>
+<area shape="rect" id="node10" href="$stdafx_8cpp.html" title="ProyectoIntegrador2\l/stdafx.cpp" alt="" coords="827,97,966,138"/>
 </map>

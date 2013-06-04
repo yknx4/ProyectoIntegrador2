@@ -1,5 +1,5 @@
-#ifndef CUESTIONARIO_H
-#define CUESTIONARIO_H
+#ifndef ENCRIPTADOR_H
+#define ENCRIPTADOR_H
 
 // SistemaConTimer.cpp : Defines the entry point for the console application.
 //

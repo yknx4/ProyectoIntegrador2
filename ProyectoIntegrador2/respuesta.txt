@@ -3,3 +3,5 @@
 2013_6_2	sadasdasd	b	asdasd	7	6	asdasdas	5	asdasda	10	asfasfd	9	9	
 2013_6_2	asdasd	b			6	asd	6	asd	6	asd	6	asd	
 2013_6_2	asdas	b	asd	6	10	asd	10	asd	6	asd	6	asd	
+2013_6_3	Ciencias	a	Ingenieria de Software	6	7	Mas Espacios	8	Libros mas nuevos	7	Mejors Computadoras	9	Cambiar a ciertos empleados	
+2013_6_4	asdasd	b	asdasd	asdsad	6	6	6	6	6	6	6	6	

@@ -1,13 +1,15 @@
-\section{Referencia de la Clase Cuestionario}
+\section{Cuestionario Class Reference}
 \label{class_cuestionario}\index{Cuestionario@{Cuestionario}}
 
 
 {\ttfamily \#include $<$Cuestionario.\-h$>$}
 
-\subsection*{Métodos públicos}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 {\bf Cuestionario} ()
+\item 
+{\bf Cuestionario} (vector$<$ {\bf Pregunta} $\ast$ $>$ {\bf preguntas})
 \item 
 {\bf $\sim$\-Cuestionario} ()
 \item 
@@ -17,16 +19,21 @@ void {\bf hacer\-Preguntas} ()
 \item 
 void {\bf add\-Pregunta} ({\bf Pregunta} $\ast$)
 \end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ {\bf Pregunta} $\ast$ $>$ {\bf preguntas}
+\end{DoxyCompactItemize}
 
 
-\subsection{Descripción detallada}
+\subsection{Detailed Description}
 
 
-Definición en la línea 6 del archivo Cuestionario.\-h.
+Definition at line 6 of file Cuestionario.\-h.
 
 
 
-\subsection{Documentación del constructor y destructor}
+\subsection{Constructor \& Destructor Documentation}
 \index{Cuestionario@{Cuestionario}!Cuestionario@{Cuestionario}}
 \index{Cuestionario@{Cuestionario}!Cuestionario@{Cuestionario}}
 \subsubsection[{Cuestionario}]{\setlength{\rightskip}{0pt plus 5cm}Cuestionario\-::\-Cuestionario (
@@ -36,13 +43,30 @@ Definición en la línea 6 del archivo Cuestionario.\-h.
 )}\label{class_cuestionario_a2455ac26c1e8d11143184e6dbd91e1f4}
 
 
-Definición en la línea 12 del archivo Cuestionario.\-cpp.
+Definition at line 14 of file Cuestionario.\-cpp.
 
 
 \begin{DoxyCode}
-13 \{
-14     
-15 \}
+15 \{
+16     
+17 \}
+\end{DoxyCode}
+\index{Cuestionario@{Cuestionario}!Cuestionario@{Cuestionario}}
+\index{Cuestionario@{Cuestionario}!Cuestionario@{Cuestionario}}
+\subsubsection[{Cuestionario}]{\setlength{\rightskip}{0pt plus 5cm}Cuestionario\-::\-Cuestionario (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Pregunta} $\ast$ $>$}]{preguntas}
+\end{DoxyParamCaption}
+)}\label{class_cuestionario_af69dde57b9ba6b1455cf3722db1ae3dc}
+
+
+Definition at line 19 of file Cuestionario.\-cpp.
+
+
+\begin{DoxyCode}
+20 \{
+21     this->preguntas=preguntas;
+22 \}
 \end{DoxyCode}
 \index{Cuestionario@{Cuestionario}!$\sim$\-Cuestionario@{$\sim$\-Cuestionario}}
 \index{$\sim$\-Cuestionario@{$\sim$\-Cuestionario}!Cuestionario@{Cuestionario}}
@@ -53,17 +77,17 @@ Definición en la línea 12 del archivo Cuestionario.\-cpp.
 )}\label{class_cuestionario_af2998a894d70b648fc0a088924cf09f2}
 
 
-Definición en la línea 17 del archivo Cuestionario.\-cpp.
+Definition at line 24 of file Cuestionario.\-cpp.
 
 
 \begin{DoxyCode}
-18 \{
-19 
-20 \}
+25 \{
+26 
+27 \}
 \end{DoxyCode}
 
 
-\subsection{Documentación de las funciones miembro}
+\subsection{Member Function Documentation}
 \index{Cuestionario@{Cuestionario}!add\-Pregunta@{add\-Pregunta}}
 \index{add\-Pregunta@{add\-Pregunta}!Cuestionario@{Cuestionario}}
 \subsubsection[{add\-Pregunta}]{\setlength{\rightskip}{0pt plus 5cm}void Cuestionario\-::add\-Pregunta (
@@ -73,27 +97,15 @@ Definición en la línea 17 del archivo Cuestionario.\-cpp.
 )}\label{class_cuestionario_a6fde1365c5b84321eba9a6c03512ae65}
 
 
-Definición en la línea 64 del archivo Cuestionario.\-cpp.
+Definition at line 71 of file Cuestionario.\-cpp.
 
 
 \begin{DoxyCode}
-64                                              \{
-65     preguntas.push\_back(input);
-66 
-67 \}
+71                                              \{
+72     preguntas.push\_back(input);
+73 
+74 \}
 \end{DoxyCode}
-
-
-Gráfico de llamadas a esta función\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_cuestionario_a6fde1365c5b84321eba9a6c03512ae65_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{Cuestionario@{Cuestionario}!Guardar\-Cuestionario@{Guardar\-Cuestionario}}
 \index{Guardar\-Cuestionario@{Guardar\-Cuestionario}!Cuestionario@{Cuestionario}}
 \subsubsection[{Guardar\-Cuestionario}]{\setlength{\rightskip}{0pt plus 5cm}bool Cuestionario\-::\-Guardar\-Cuestionario (
@@ -103,43 +115,42 @@ Gráfico de llamadas a esta función\-:
 )}\label{class_cuestionario_ab8cf9b63d66a3ab624a2ff0b9f854773}
 
 
-Definición en la línea 22 del archivo Cuestionario.\-cpp.
+Definition at line 29 of file Cuestionario.\-cpp.
 
 
 \begin{DoxyCode}
-23 \{
-24     \textcolor{keyword}{typedef} std::chrono::system\_clock Clock;
-25     \textcolor{keyword}{auto} now = Clock::now();
-26     std::time\_t now\_c = Clock::to\_time\_t(now);
-27 
-28     \textcolor{keyword}{struct }tm *parts = std::localtime(&now\_c);
-29     \textcolor{keywordtype}{int} anio= 1900 + parts->tm\_year;
-30     \textcolor{keywordtype}{int} month= 1    + parts->tm\_mon;
-31     \textcolor{keywordtype}{int} day = parts->tm\_mday ;
-32 
-33     ofstream myfile;
-34     myfile.open(\textcolor{stringliteral}{"respuesta.txt"},ios::out | ios::app);
-35     \textcolor{keywordtype}{string} respues = \textcolor{stringliteral}{""};
-36     \textcolor{keywordflow}{if} (myfile.is\_open())
-37     \{
-38         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i=0;i<preguntas.size();i++)
-39         \{
-40             respues+=preguntas[i]->getRespuesta()+\textcolor{stringliteral}{"\(\backslash\)t"};
-41         \}
-42         myfile << 1900 + parts->tm\_year  << \textcolor{stringliteral}{"\_"};
-43         myfile << 1    + parts->tm\_mon   << \textcolor{stringliteral}{"\_"};
-44         myfile <<        parts->tm\_mday  << \textcolor{stringliteral}{"\(\backslash\)t"};
-45         myfile << respues <<\textcolor{stringliteral}{"\(\backslash\)n"};
-46         myfile.close();
-47         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-48     \}
-49     \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"No se puede guardar"};
-50     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-51 \}
+30 \{
+31     \textcolor{keyword}{typedef} std::chrono::system\_clock Clock;
+32     \textcolor{keyword}{auto} now = Clock::now();
+33     std::time\_t now\_c = Clock::to\_time\_t(now);
+34     \textcolor{keyword}{struct }tm *parts = std::localtime(&now\_c);
+35     \textcolor{keywordtype}{int} anio= 1900 + parts->tm\_year;
+36     \textcolor{keywordtype}{int} month= 1    + parts->tm\_mon;
+37     \textcolor{keywordtype}{int} day = parts->tm\_mday ;
+38 
+39     ofstream myfile;
+40     myfile.open(\textcolor{stringliteral}{"respuesta.txt"},ios::out | ios::app);
+41     \textcolor{keywordtype}{string} respues = \textcolor{stringliteral}{""};
+42     \textcolor{keywordflow}{if} (myfile.is\_open())
+43     \{
+44         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i=0;i<preguntas.size();i++)
+45         \{
+46             respues+=preguntas[i]->getRespuesta()+\textcolor{stringliteral}{"\(\backslash\)t"};
+47         \}
+48         myfile << 1900 + parts->tm\_year  << \textcolor{stringliteral}{"\_"};
+49         myfile << 1    + parts->tm\_mon   << \textcolor{stringliteral}{"\_"};
+50         myfile <<        parts->tm\_mday  << \textcolor{stringliteral}{"\(\backslash\)t"};
+51         myfile << respues <<\textcolor{stringliteral}{"\(\backslash\)n"};
+52         myfile.close();
+53         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+54     \}
+55     \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"No se puede guardar"};
+56     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+57 \}
 \end{DoxyCode}
 
 
-Gráfico de llamadas a esta función\-:
+Here is the caller graph for this function\-:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -158,23 +169,24 @@ Gráfico de llamadas a esta función\-:
 )}\label{class_cuestionario_ae79115ce61bd16dbd5850756035aa2b2}
 
 
-Definición en la línea 53 del archivo Cuestionario.\-cpp.
+Definition at line 59 of file Cuestionario.\-cpp.
 
 
 \begin{DoxyCode}
-54 \{
-55     \textcolor{keywordtype}{int} numeroPreguntas = this->preguntas.size();
-56 \textcolor{comment}{//  cout<<preguntas.size()<<"eltama~no\(\backslash\)n";}
-57     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} contadorPreguntas=0;contadorPreguntas<numeroPreguntas;contadorPreguntas++)
-58     \{
-59         preguntas[contadorPreguntas]->imprimirPregunta();
-60         preguntas[contadorPreguntas]->responder();
-61     \}
-62 \}
+60 \{
+61     
+62     \textcolor{keywordtype}{int} numeroPreguntas = this->preguntas.size();
+63 \textcolor{comment}{//  cout<<preguntas.size()<<"eltama~no\(\backslash\)n";}
+64     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} contadorPreguntas=0;contadorPreguntas<numeroPreguntas;contadorPreguntas++)
+65     \{
+66         preguntas[contadorPreguntas]->imprimirPregunta();
+67         preguntas[contadorPreguntas]->responder();
+68     \}
+69 \}
 \end{DoxyCode}
 
 
-Gráfico de llamadas a esta función\-:
+Here is the caller graph for this function\-:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -186,7 +198,17 @@ Gráfico de llamadas a esta función\-:
 
 
 
-La documentación para esta clase fue generada a partir de los siguientes ficheros\-:\begin{DoxyCompactItemize}
+\subsection{Member Data Documentation}
+\index{Cuestionario@{Cuestionario}!preguntas@{preguntas}}
+\index{preguntas@{preguntas}!Cuestionario@{Cuestionario}}
+\subsubsection[{preguntas}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Pregunta}$\ast$$>$ Cuestionario\-::preguntas\hspace{0.3cm}{\ttfamily [private]}}\label{class_cuestionario_af4d2d419613d738aa966f1a897ab6b6f}
+
+
+Definition at line 16 of file Cuestionario.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
 Proyecto\-Integrador2/{\bf Cuestionario.\-h}\item 
 Proyecto\-Integrador2/{\bf Cuestionario.\-cpp}\end{DoxyCompactItemize}

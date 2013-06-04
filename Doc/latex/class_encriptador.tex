@@ -1,10 +1,10 @@
-\section{Referencia de la Clase Encriptador}
+\section{Encriptador Class Reference}
 \label{class_encriptador}\index{Encriptador@{Encriptador}}
 
 
 {\ttfamily \#include $<$Encriptador.\-h$>$}
 
-\subsection*{Métodos públicos}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 {\bf Encriptador} (std\-::string clave\-E, std\-::string clave\-D)
@@ -15,16 +15,25 @@ std\-::string {\bf Cifrar} (std\-::string input)
 \item 
 std\-::string {\bf Decifrar} (std\-::string input)
 \end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf clave\-Encriptacion}
+\item 
+std\-::string {\bf clave\-Desencriptacion}
+\item 
+int {\bf tamano\-Clave}
+\end{DoxyCompactItemize}
 
 
-\subsection{Descripción detallada}
+\subsection{Detailed Description}
 
 
-Definición en la línea 16 del archivo Encriptador.\-h.
+Definition at line 16 of file Encriptador.\-h.
 
 
 
-\subsection{Documentación del constructor y destructor}
+\subsection{Constructor \& Destructor Documentation}
 \index{Encriptador@{Encriptador}!Encriptador@{Encriptador}}
 \index{Encriptador@{Encriptador}!Encriptador@{Encriptador}}
 \subsubsection[{Encriptador}]{\setlength{\rightskip}{0pt plus 5cm}Encriptador\-::\-Encriptador (
@@ -35,7 +44,7 @@ Definición en la línea 16 del archivo Encriptador.\-h.
 )}\label{class_encriptador_a35b3d94b703958c627475852edd349bc}
 
 
-Definición en la línea 51 del archivo Encriptador.\-cpp.
+Definition at line 51 of file Encriptador.\-cpp.
 
 
 \begin{DoxyCode}
@@ -58,7 +67,7 @@ Definición en la línea 51 del archivo Encriptador.\-cpp.
 )}\label{class_encriptador_a93024926b47a3da38bd8b3ff83c5fb84}
 
 
-Definición en la línea 46 del archivo Encriptador.\-cpp.
+Definition at line 46 of file Encriptador.\-cpp.
 
 
 \begin{DoxyCode}
@@ -68,7 +77,7 @@ Definición en la línea 46 del archivo Encriptador.\-cpp.
 \end{DoxyCode}
 
 
-\subsection{Documentación de las funciones miembro}
+\subsection{Member Function Documentation}
 \index{Encriptador@{Encriptador}!Cifrar@{Cifrar}}
 \index{Cifrar@{Cifrar}!Encriptador@{Encriptador}}
 \subsubsection[{Cifrar}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Encriptador\-::\-Cifrar (
@@ -78,7 +87,7 @@ Definición en la línea 46 del archivo Encriptador.\-cpp.
 )}\label{class_encriptador_aec4f517051f7255e45a6db0f90e21bd4}
 
 
-Definición en la línea 29 del archivo Encriptador.\-cpp.
+Definition at line 29 of file Encriptador.\-cpp.
 
 
 \begin{DoxyCode}
@@ -100,8 +109,7 @@ Definición en la línea 29 del archivo Encriptador.\-cpp.
 \end{DoxyCode}
 
 
-Gráfico de llamadas a esta función\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -119,7 +127,7 @@ Gráfico de llamadas a esta función\-:
 )}\label{class_encriptador_a7e00b65cf581293b47f126506f8c5b42}
 
 
-Definición en la línea 10 del archivo Encriptador.\-cpp.
+Definition at line 10 of file Encriptador.\-cpp.
 
 
 \begin{DoxyCode}
@@ -143,7 +151,31 @@ Definición en la línea 10 del archivo Encriptador.\-cpp.
 \end{DoxyCode}
 
 
-La documentación para esta clase fue generada a partir de los siguientes ficheros\-:\begin{DoxyCompactItemize}
+\subsection{Member Data Documentation}
+\index{Encriptador@{Encriptador}!clave\-Desencriptacion@{clave\-Desencriptacion}}
+\index{clave\-Desencriptacion@{clave\-Desencriptacion}!Encriptador@{Encriptador}}
+\subsubsection[{clave\-Desencriptacion}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Encriptador\-::clave\-Desencriptacion\hspace{0.3cm}{\ttfamily [private]}}\label{class_encriptador_a70a589e464dee2e417bb14a87cf458ca}
+
+
+Definition at line 25 of file Encriptador.\-h.
+
+\index{Encriptador@{Encriptador}!clave\-Encriptacion@{clave\-Encriptacion}}
+\index{clave\-Encriptacion@{clave\-Encriptacion}!Encriptador@{Encriptador}}
+\subsubsection[{clave\-Encriptacion}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Encriptador\-::clave\-Encriptacion\hspace{0.3cm}{\ttfamily [private]}}\label{class_encriptador_a2556c08307108e435116ae4cffbd9ef8}
+
+
+Definition at line 24 of file Encriptador.\-h.
+
+\index{Encriptador@{Encriptador}!tamano\-Clave@{tamano\-Clave}}
+\index{tamano\-Clave@{tamano\-Clave}!Encriptador@{Encriptador}}
+\subsubsection[{tamano\-Clave}]{\setlength{\rightskip}{0pt plus 5cm}int Encriptador\-::tamano\-Clave\hspace{0.3cm}{\ttfamily [private]}}\label{class_encriptador_a4fb1a20c261b9a3aa7a975af581969a5}
+
+
+Definition at line 26 of file Encriptador.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
 Proyecto\-Integrador2/{\bf Encriptador.\-h}\item 
 Proyecto\-Integrador2/{\bf Encriptador.\-cpp}\end{DoxyCompactItemize}

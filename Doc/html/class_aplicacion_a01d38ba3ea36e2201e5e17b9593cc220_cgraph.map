@@ -1,0 +1,13 @@
+<map id="Aplicacion::iniciar" name="Aplicacion::iniciar">
+<area shape="rect" id="node2" href="$_encriptador_8cpp.html#a514eeb9d37c47513308d43f3ddcb5d66" title="validarAcceso" alt="" coords="201,56,303,83"/>
+<area shape="rect" id="node6" href="$class_aplicacion.html#a593362390998cc4e741cbc0c92319b9e" title="Aplicacion::Encuesta" alt="" coords="179,145,325,172"/>
+<area shape="rect" id="node9" href="$class_aplicacion.html#abc60d6d5258aa20306798c81d20b91e4" title="Aplicacion::Registros" alt="" coords="179,221,325,248"/>
+<area shape="rect" id="node3" href="$class_validador.html#aa28aeee63d24ac104492eac4a24ef215" title="Validador::esValido" alt="" coords="417,5,551,32"/>
+<area shape="rect" id="node5" href="$class_encriptador.html#aec4f517051f7255e45a6db0f90e21bd4" title="Encriptador::Cifrar" alt="" coords="421,56,547,83"/>
+<area shape="rect" id="node4" href="$class_validador.html#af37049c367add17c5f52e938608251f5" title="Validador::getContent" alt="" coords="643,5,789,32"/>
+<area shape="rect" id="node7" href="$class_cuestionario.html#ae79115ce61bd16dbd5850756035aa2b2" title="Cuestionario::hacerPreguntas" alt="" coords="387,107,581,133"/>
+<area shape="rect" id="node8" href="$class_cuestionario.html#ab8cf9b63d66a3ab624a2ff0b9f854773" title="Cuestionario::GuardarCuestionario" alt="" coords="374,157,594,184"/>
+<area shape="rect" id="node10" href="$class_consulta.html#a962f20731f95b0c0e07118da310d8fab" title="Consulta::leerArchivo" alt="" coords="412,208,556,235"/>
+<area shape="rect" id="node11" href="$class_consulta.html#a559e96b607fd1ac665628432f399e0c5" title="Consulta::leerDatos" alt="" coords="416,259,552,285"/>
+<area shape="rect" id="node12" href="$class_consulta.html#a56df832e41c410cfe15b6fd2a0f82036" title="Consulta::imprimirDatos" alt="" coords="403,309,565,336"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Aplicacion::Registros" name="Aplicacion::Registros">
+<area shape="rect" id="node2" href="$class_consulta.html#a962f20731f95b0c0e07118da310d8fab" title="Consulta::leerArchivo" alt="" coords="209,5,353,32"/>
+<area shape="rect" id="node3" href="$class_consulta.html#a559e96b607fd1ac665628432f399e0c5" title="Consulta::leerDatos" alt="" coords="213,56,349,83"/>
+<area shape="rect" id="node4" href="$class_consulta.html#a56df832e41c410cfe15b6fd2a0f82036" title="Consulta::imprimirDatos" alt="" coords="201,107,362,133"/>
+</map>

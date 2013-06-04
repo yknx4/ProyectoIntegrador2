@@ -1,0 +1,4 @@
+<map id="Aplicacion::Encuesta" name="Aplicacion::Encuesta">
+<area shape="rect" id="node2" href="$class_cuestionario.html#ae79115ce61bd16dbd5850756035aa2b2" title="Cuestionario::hacerPreguntas" alt="" coords="214,5,407,32"/>
+<area shape="rect" id="node3" href="$class_cuestionario.html#ab8cf9b63d66a3ab624a2ff0b9f854773" title="Cuestionario::GuardarCuestionario" alt="" coords="201,56,421,83"/>
+</map>

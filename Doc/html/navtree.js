@@ -1,23 +1,22 @@
 var NAVTREE =
 [
   [ "Proyecto Integrador - 2do Semestre", "index.html", [
-    [ "Clases", null, [
-      [ "Lista de clases", "annotated.html", "annotated" ],
-      [ "Índice de clases", "classes.html", null ],
-      [ "Jerarquía de la clase", "hierarchy.html", "hierarchy" ],
-      [ "Miembros de las clases", "functions.html", [
-        [ "Todo", "functions.html", null ],
-        [ "Funciones", "functions_func.html", null ],
+    [ "Classes", null, [
+      [ "Class List", "annotated.html", "annotated" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
-    [ "Archivos", null, [
-      [ "Lista de archivos", "files.html", "files" ],
-      [ "Miembros de los ficheros", "globals.html", [
-        [ "Todo", "globals.html", null ],
-        [ "Funciones", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "'defines'", "globals_defs.html", null ]
+    [ "Files", null, [
+      [ "File List", "files.html", "files" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -25,11 +24,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_cuestionario_8cpp.html"
+"_aplicacion_8cpp.html"
 ];
 
-var SYNCONMSG = 'click en deshabilitar sincronización';
-var SYNCOFFMSG = 'click en habilitar sincronización';
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';
 var navTreeSubIndices = new Array();
 
 function getData(varName)

@@ -8,12 +8,17 @@
 #include <chrono>
 #include <ctime>
 #include <sstream>
-#define SEPARADOR_DATO char(31)
-#define SEPARADOR_GRUPO char(29)
+/*#define SEPARADOR_DATO char(31)
+#define SEPARADOR_GRUPO char(29)*/
 using namespace std;
 Cuestionario::Cuestionario()
 {
 	
+}
+
+Cuestionario::Cuestionario( vector <Pregunta*> preguntas )
+{
+	this->preguntas=preguntas;
 }
 
 Cuestionario::~Cuestionario()

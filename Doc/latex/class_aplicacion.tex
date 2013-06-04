@@ -1,0 +1,373 @@
+\section{Aplicacion Class Reference}
+\label{class_aplicacion}\index{Aplicacion@{Aplicacion}}
+
+
+{\ttfamily \#include $<$Aplicacion.\-h$>$}
+
+
+
+Collaboration diagram for Aplicacion\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_aplicacion__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Aplicacion} ()
+\item 
+{\bf $\sim$\-Aplicacion} ()
+\item 
+void {\bf iniciar} ()
+\item 
+void {\bf add\-Pregunta} ({\bf Pregunta} $\ast$input)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf Encuesta} ()
+\item 
+void {\bf Registros} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bf final}
+\item 
+vector$<$ {\bf Pregunta} $\ast$ $>$ {\bf preguntas}
+\item 
+{\bf Menu} {\bf menu}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Aplicacion.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Aplicacion@{Aplicacion}!Aplicacion@{Aplicacion}}
+\index{Aplicacion@{Aplicacion}!Aplicacion@{Aplicacion}}
+\subsubsection[{Aplicacion}]{\setlength{\rightskip}{0pt plus 5cm}Aplicacion\-::\-Aplicacion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_aplicacion_a732495f2906cb8b97f035d0b927e6931}
+
+
+Definition at line 18 of file Aplicacion.\-cpp.
+
+
+\begin{DoxyCode}
+19 \{
+20     menu.addOpcion(\textcolor{stringliteral}{"Encuesta"});
+21     menu.addOpcion(\textcolor{stringliteral}{"Consulta"});
+22     \textcolor{keyword}{final} =\textcolor{keyword}{true};
+23 \}
+\end{DoxyCode}
+\index{Aplicacion@{Aplicacion}!$\sim$\-Aplicacion@{$\sim$\-Aplicacion}}
+\index{$\sim$\-Aplicacion@{$\sim$\-Aplicacion}!Aplicacion@{Aplicacion}}
+\subsubsection[{$\sim$\-Aplicacion}]{\setlength{\rightskip}{0pt plus 5cm}Aplicacion\-::$\sim$\-Aplicacion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_aplicacion_a664c55738e44ec36338dbc6f38531263}
+
+
+Definition at line 13 of file Aplicacion.\-cpp.
+
+
+\begin{DoxyCode}
+14 \{
+15 
+16 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Aplicacion@{Aplicacion}!add\-Pregunta@{add\-Pregunta}}
+\index{add\-Pregunta@{add\-Pregunta}!Aplicacion@{Aplicacion}}
+\subsubsection[{add\-Pregunta}]{\setlength{\rightskip}{0pt plus 5cm}void Aplicacion\-::add\-Pregunta (
+\begin{DoxyParamCaption}
+\item[{{\bf Pregunta} $\ast$}]{input}
+\end{DoxyParamCaption}
+)}\label{class_aplicacion_aceef1aa7af0799f8a83d6582f7d34783}
+
+
+Definition at line 58 of file Aplicacion.\-cpp.
+
+
+\begin{DoxyCode}
+59 \{
+60     preguntas.push\_back(input);
+61 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{class_aplicacion_aceef1aa7af0799f8a83d6582f7d34783_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Aplicacion@{Aplicacion}!Encuesta@{Encuesta}}
+\index{Encuesta@{Encuesta}!Aplicacion@{Aplicacion}}
+\subsubsection[{Encuesta}]{\setlength{\rightskip}{0pt plus 5cm}void Aplicacion\-::\-Encuesta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_aplicacion_a593362390998cc4e741cbc0c92319b9e}
+
+
+Definition at line 44 of file Aplicacion.\-cpp.
+
+
+\begin{DoxyCode}
+45 \{
+46     Cuestionario cuestionario(preguntas);\textcolor{comment}{//se crea un cuestionario donde se añadiran las preguntas y se
+       responderan, también con este objeto se guardaran}
+47     \textcolor{comment}{//for (size\_t i=0;i<preguntas.size();i++) \{cuestionario.addPregunta(preguntas[i]);\} //En este ciclo se
+       añaden todas las preguntas del vector al cuestionario}
+48 
+49     cuestionario.hacerPreguntas();\textcolor{comment}{//con este metodo se imprimien y se contestan las preguntas del
+       cuestionario}
+50     \textcolor{keywordflow}{if} (cuestionario.GuardarCuestionario()) \textcolor{comment}{//Aqui intenta guardar el cuestionario en un archivo de texto
+       "respuestas.txt"}
+51     \{
+52         cout<<\textcolor{stringliteral}{"Encuesta guardada. Gracias :)"}; \textcolor{comment}{//si se logra guardar, entonces se imprime este mensaje}
+53         \textcolor{keyword}{final}=\textcolor{keyword}{false}; \textcolor{comment}{//se asigna esta variable global a 0, para que el hilo principal salga del ciclo y
+       entonces pueda cerrarse el programa}
+54     \}
+55     \textcolor{keywordflow}{else} cout<<\textcolor{stringliteral}{"Error al guardar la encuesta, Contacte al Encargado"}; \textcolor{comment}{//Se imprime este mensaje y no se
+       cierra el programa, cuando hay un error al guardar la encuesta}
+56 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_aplicacion_a593362390998cc4e741cbc0c92319b9e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_aplicacion_a593362390998cc4e741cbc0c92319b9e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Aplicacion@{Aplicacion}!iniciar@{iniciar}}
+\index{iniciar@{iniciar}!Aplicacion@{Aplicacion}}
+\subsubsection[{iniciar}]{\setlength{\rightskip}{0pt plus 5cm}void Aplicacion\-::iniciar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_aplicacion_a01d38ba3ea36e2201e5e17b9593cc220}
+
+
+Definition at line 63 of file Aplicacion.\-cpp.
+
+
+\begin{DoxyCode}
+64 \{
+65     \textcolor{keywordflow}{if}(!validarAcceso())return ; \textcolor{comment}{//Aqui se checa que la llave este puesta, si no esta se sale del programa,
+       sí si está continua la ejecución encontrada, Favor de elegir la opcion adecuada\(\backslash\)n ";
+    thread * hiloElegido = nullptr;
+    switch (menu.SeleccionarOpcion())
+    \{
+    case 1:
+        hiloElegido = new thread(&Aplicacion::Encuesta,this);
+        break;
+    case 2:
+        hiloElegido = new thread(&Aplicacion::Registros,this);
+        break;
+    default:
+        final=false;
+        break;
+    \}
+
+
+    //thread hiloEjecucion(&Aplicacion::Registros,this); //Aqui se llama asíncronamente un hilo de
+       ejecución, llamando a la funcion previamente definida llamada "AplicacionDeEncuesta"
+    this\_thread::sleep\_for(std::chrono::milliseconds(3000)); //Se espera 3 segundos antes de entrar al
+       ciclo infinito
+    while (validarAcceso()&&final) //Este es el ciclo While que se realiza infinitamente, hasta que la
+       encuesta se termine (pues la variable final queda en 0 y dado que 1^0=0) 
+    \{
+        this\_thread::sleep\_for(std::chrono::milliseconds(3000));//El proceso duerme por 3 segundos antes de
+       volver a validar
+    \}
+    if (hiloElegido!=nullptr)
+    \{
+        hiloElegido->detach(); //Se destruye el hilo de ejecución de AplicacionDeEncuesta despues de salir del
+       ciclo
+    \}
+
+    /*string lala[10];
+    lala->size();*/
+    //cin.getline(new char,1);
+\}
+}
+66     cout<<\textcolor{stringliteral}{"Clave encontrada, Favor de elegir la opcion adecuada\(\backslash\)n "};
+67     thread * hiloElegido = \textcolor{keyword}{nullptr};
+68     \textcolor{keywordflow}{switch} (menu.SeleccionarOpcion())
+69     \{
+70     \textcolor{keywordflow}{case} 1:
+71         hiloElegido = \textcolor{keyword}{new} thread(&Aplicacion::Encuesta,\textcolor{keyword}{this});
+72         \textcolor{keywordflow}{break};
+73     \textcolor{keywordflow}{case} 2:
+74         hiloElegido = \textcolor{keyword}{new} thread(&Aplicacion::Registros,\textcolor{keyword}{this});
+75         \textcolor{keywordflow}{break};
+76     \textcolor{keywordflow}{default}:
+77         \textcolor{keyword}{final}=\textcolor{keyword}{false};
+78         \textcolor{keywordflow}{break};
+79     \}
+80 
+81 
+82     \textcolor{comment}{//thread hiloEjecucion(&Aplicacion::Registros,this); //Aqui se llama asíncronamente un hilo de
+       ejecución, llamando a la funcion previamente definida llamada "AplicacionDeEncuesta"}
+83     this\_thread::sleep\_for(std::chrono::milliseconds(3000)); \textcolor{comment}{//Se espera 3 segundos antes de entrar al
+       ciclo infinito}
+84     \textcolor{keywordflow}{while} (validarAcceso()&&\textcolor{keyword}{final}) \textcolor{comment}{//Este es el ciclo While que se realiza infinitamente, hasta que la
+       encuesta se termine (pues la variable final queda en 0 y dado que 1^0=0) }
+85     \{
+86         this\_thread::sleep\_for(std::chrono::milliseconds(3000));\textcolor{comment}{//El proceso duerme por 3 segundos antes de
+       volver a validar}
+87     \}
+88     \textcolor{keywordflow}{if} (hiloElegido!=\textcolor{keyword}{nullptr})
+89     \{
+90         hiloElegido->detach(); \textcolor{comment}{//Se destruye el hilo de ejecución de AplicacionDeEncuesta despues de salir del
+       ciclo}
+91     \}
+92 
+93     \textcolor{comment}{/*string lala[10];}
+94 \textcolor{comment}{    lala->size();*/}
+95     \textcolor{comment}{//cin.getline(new char,1);}
+96 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_aplicacion_a01d38ba3ea36e2201e5e17b9593cc220_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_aplicacion_a01d38ba3ea36e2201e5e17b9593cc220_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Aplicacion@{Aplicacion}!Registros@{Registros}}
+\index{Registros@{Registros}!Aplicacion@{Aplicacion}}
+\subsubsection[{Registros}]{\setlength{\rightskip}{0pt plus 5cm}void Aplicacion\-::\-Registros (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_aplicacion_abc60d6d5258aa20306798c81d20b91e4}
+
+
+Definition at line 25 of file Aplicacion.\-cpp.
+
+
+\begin{DoxyCode}
+26 \{
+27     Aplicacion();
+28     Consulta consulta(preguntas);
+29     \textcolor{keywordflow}{if} (consulta.leerArchivo(\textcolor{stringliteral}{"respuesta.txt"}))
+30     \{
+31         consulta.leerDatos();
+32         consulta.imprimirDatos();
+33         cin.getline(\textcolor{keyword}{new} \textcolor{keywordtype}{char},1);
+34         cin.ignore();
+35         \textcolor{keyword}{final}=\textcolor{keyword}{false};
+36 
+37     \}
+38     \textcolor{keywordflow}{else}
+39     \{
+40         cout<<\textcolor{stringliteral}{"Error al leer el archivo de las respuestas"}<<endl;
+41     \}
+42 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_aplicacion_abc60d6d5258aa20306798c81d20b91e4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_aplicacion_abc60d6d5258aa20306798c81d20b91e4_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Aplicacion@{Aplicacion}!final@{final}}
+\index{final@{final}!Aplicacion@{Aplicacion}}
+\subsubsection[{final}]{\setlength{\rightskip}{0pt plus 5cm}bool Aplicacion\-::final\hspace{0.3cm}{\ttfamily [private]}}\label{class_aplicacion_a2469262187eccb4e454a43898ae4586a}
+
+
+Definition at line 21 of file Aplicacion.\-h.
+
+\index{Aplicacion@{Aplicacion}!menu@{menu}}
+\index{menu@{menu}!Aplicacion@{Aplicacion}}
+\subsubsection[{menu}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Menu} Aplicacion\-::menu\hspace{0.3cm}{\ttfamily [private]}}\label{class_aplicacion_a22da91ee92f47ee873c2047d9fa14c09}
+
+
+Definition at line 23 of file Aplicacion.\-h.
+
+\index{Aplicacion@{Aplicacion}!preguntas@{preguntas}}
+\index{preguntas@{preguntas}!Aplicacion@{Aplicacion}}
+\subsubsection[{preguntas}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Pregunta}$\ast$$>$ Aplicacion\-::preguntas\hspace{0.3cm}{\ttfamily [private]}}\label{class_aplicacion_aca6c6065e3562fc99904aaaf7254a9bd}
+
+
+Definition at line 22 of file Aplicacion.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-Integrador2/{\bf Aplicacion.\-h}\item 
+Proyecto\-Integrador2/{\bf Aplicacion.\-cpp}\end{DoxyCompactItemize}

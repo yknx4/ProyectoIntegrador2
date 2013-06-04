@@ -1,0 +1,140 @@
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}
+\contentsline {chapter}{\numberline {2}Class Index}{3}
+\contentsline {section}{\numberline {2.1}Class List}{3}
+\contentsline {chapter}{\numberline {3}File Index}{5}
+\contentsline {section}{\numberline {3.1}File List}{5}
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}
+\contentsline {section}{\numberline {4.1}Aplicacion Class Reference}{7}
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{8}
+\contentsline {subsection}{\numberline {4.1.2}Constructor \& Destructor Documentation}{8}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Aplicacion}{8}
+\contentsline {subsubsection}{\numberline {4.1.2.2}$\sim $\discretionary {-}{}{}Aplicacion}{8}
+\contentsline {subsection}{\numberline {4.1.3}Member Function Documentation}{8}
+\contentsline {subsubsection}{\numberline {4.1.3.1}add\discretionary {-}{}{}Pregunta}{8}
+\contentsline {subsubsection}{\numberline {4.1.3.2}Encuesta}{9}
+\contentsline {subsubsection}{\numberline {4.1.3.3}iniciar}{9}
+\contentsline {subsubsection}{\numberline {4.1.3.4}Registros}{11}
+\contentsline {subsection}{\numberline {4.1.4}Member Data Documentation}{12}
+\contentsline {subsubsection}{\numberline {4.1.4.1}final}{12}
+\contentsline {subsubsection}{\numberline {4.1.4.2}menu}{12}
+\contentsline {subsubsection}{\numberline {4.1.4.3}preguntas}{12}
+\contentsline {section}{\numberline {4.2}Consulta Class Reference}{13}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{13}
+\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{13}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Consulta}{13}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Consulta}{13}
+\contentsline {subsubsection}{\numberline {4.2.2.3}$\sim $\discretionary {-}{}{}Consulta}{13}
+\contentsline {subsection}{\numberline {4.2.3}Member Function Documentation}{14}
+\contentsline {subsubsection}{\numberline {4.2.3.1}add\discretionary {-}{}{}Pregunta}{14}
+\contentsline {subsubsection}{\numberline {4.2.3.2}imprimir\discretionary {-}{}{}Datos}{14}
+\contentsline {subsubsection}{\numberline {4.2.3.3}leer\discretionary {-}{}{}Archivo}{14}
+\contentsline {subsubsection}{\numberline {4.2.3.4}leer\discretionary {-}{}{}Datos}{15}
+\contentsline {subsection}{\numberline {4.2.4}Member Data Documentation}{15}
+\contentsline {subsubsection}{\numberline {4.2.4.1}archivo}{15}
+\contentsline {subsubsection}{\numberline {4.2.4.2}preguntas}{15}
+\contentsline {subsubsection}{\numberline {4.2.4.3}Registros}{15}
+\contentsline {section}{\numberline {4.3}Cuestionario Class Reference}{15}
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{16}
+\contentsline {subsection}{\numberline {4.3.2}Constructor \& Destructor Documentation}{16}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Cuestionario}{16}
+\contentsline {subsubsection}{\numberline {4.3.2.2}Cuestionario}{16}
+\contentsline {subsubsection}{\numberline {4.3.2.3}$\sim $\discretionary {-}{}{}Cuestionario}{16}
+\contentsline {subsection}{\numberline {4.3.3}Member Function Documentation}{16}
+\contentsline {subsubsection}{\numberline {4.3.3.1}add\discretionary {-}{}{}Pregunta}{16}
+\contentsline {subsubsection}{\numberline {4.3.3.2}Guardar\discretionary {-}{}{}Cuestionario}{17}
+\contentsline {subsubsection}{\numberline {4.3.3.3}hacer\discretionary {-}{}{}Preguntas}{17}
+\contentsline {subsection}{\numberline {4.3.4}Member Data Documentation}{18}
+\contentsline {subsubsection}{\numberline {4.3.4.1}preguntas}{18}
+\contentsline {section}{\numberline {4.4}Encriptador Class Reference}{18}
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{18}
+\contentsline {subsection}{\numberline {4.4.2}Constructor \& Destructor Documentation}{18}
+\contentsline {subsubsection}{\numberline {4.4.2.1}Encriptador}{18}
+\contentsline {subsubsection}{\numberline {4.4.2.2}$\sim $\discretionary {-}{}{}Encriptador}{19}
+\contentsline {subsection}{\numberline {4.4.3}Member Function Documentation}{19}
+\contentsline {subsubsection}{\numberline {4.4.3.1}Cifrar}{19}
+\contentsline {subsubsection}{\numberline {4.4.3.2}Decifrar}{19}
+\contentsline {subsection}{\numberline {4.4.4}Member Data Documentation}{20}
+\contentsline {subsubsection}{\numberline {4.4.4.1}clave\discretionary {-}{}{}Desencriptacion}{20}
+\contentsline {subsubsection}{\numberline {4.4.4.2}clave\discretionary {-}{}{}Encriptacion}{20}
+\contentsline {subsubsection}{\numberline {4.4.4.3}tamano\discretionary {-}{}{}Clave}{20}
+\contentsline {section}{\numberline {4.5}Menu Class Reference}{20}
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{20}
+\contentsline {subsection}{\numberline {4.5.2}Constructor \& Destructor Documentation}{20}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Menu}{20}
+\contentsline {subsubsection}{\numberline {4.5.2.2}Menu}{21}
+\contentsline {subsection}{\numberline {4.5.3}Member Function Documentation}{21}
+\contentsline {subsubsection}{\numberline {4.5.3.1}add\discretionary {-}{}{}Opcion}{21}
+\contentsline {subsubsection}{\numberline {4.5.3.2}Seleccionar\discretionary {-}{}{}Opcion}{21}
+\contentsline {subsection}{\numberline {4.5.4}Member Data Documentation}{21}
+\contentsline {subsubsection}{\numberline {4.5.4.1}opc}{21}
+\contentsline {subsubsection}{\numberline {4.5.4.2}opciones}{22}
+\contentsline {section}{\numberline {4.6}Pregunta Class Reference}{22}
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{22}
+\contentsline {subsection}{\numberline {4.6.2}Constructor \& Destructor Documentation}{23}
+\contentsline {subsubsection}{\numberline {4.6.2.1}Pregunta}{23}
+\contentsline {subsubsection}{\numberline {4.6.2.2}$\sim $\discretionary {-}{}{}Pregunta}{23}
+\contentsline {subsection}{\numberline {4.6.3}Member Function Documentation}{23}
+\contentsline {subsubsection}{\numberline {4.6.3.1}get\discretionary {-}{}{}Respuesta}{23}
+\contentsline {subsubsection}{\numberline {4.6.3.2}imprimir\discretionary {-}{}{}Pregunta}{23}
+\contentsline {subsubsection}{\numberline {4.6.3.3}responder}{23}
+\contentsline {subsection}{\numberline {4.6.4}Member Data Documentation}{24}
+\contentsline {subsubsection}{\numberline {4.6.4.1}pregunta}{24}
+\contentsline {subsubsection}{\numberline {4.6.4.2}respuesta}{24}
+\contentsline {section}{\numberline {4.7}Pregunta5a10 Class Reference}{24}
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{25}
+\contentsline {subsection}{\numberline {4.7.2}Constructor \& Destructor Documentation}{25}
+\contentsline {subsubsection}{\numberline {4.7.2.1}Pregunta5a10}{25}
+\contentsline {subsubsection}{\numberline {4.7.2.2}$\sim $\discretionary {-}{}{}Pregunta5a10}{25}
+\contentsline {subsection}{\numberline {4.7.3}Member Function Documentation}{25}
+\contentsline {subsubsection}{\numberline {4.7.3.1}imprimir\discretionary {-}{}{}Pregunta}{25}
+\contentsline {subsubsection}{\numberline {4.7.3.2}responder}{25}
+\contentsline {section}{\numberline {4.8}Pregunta\discretionary {-}{}{}Opc\discretionary {-}{}{}Mult Class Reference}{26}
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{27}
+\contentsline {subsection}{\numberline {4.8.2}Constructor \& Destructor Documentation}{27}
+\contentsline {subsubsection}{\numberline {4.8.2.1}Pregunta\discretionary {-}{}{}Opc\discretionary {-}{}{}Mult}{27}
+\contentsline {subsubsection}{\numberline {4.8.2.2}$\sim $\discretionary {-}{}{}Pregunta\discretionary {-}{}{}Opc\discretionary {-}{}{}Mult}{27}
+\contentsline {subsection}{\numberline {4.8.3}Member Function Documentation}{27}
+\contentsline {subsubsection}{\numberline {4.8.3.1}imprimir\discretionary {-}{}{}Pregunta}{27}
+\contentsline {subsubsection}{\numberline {4.8.3.2}responder}{28}
+\contentsline {subsection}{\numberline {4.8.4}Member Data Documentation}{28}
+\contentsline {subsubsection}{\numberline {4.8.4.1}numero\discretionary {-}{}{}Opciones}{28}
+\contentsline {subsubsection}{\numberline {4.8.4.2}opcions}{28}
+\contentsline {section}{\numberline {4.9}Validador Class Reference}{28}
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{29}
+\contentsline {subsection}{\numberline {4.9.2}Constructor \& Destructor Documentation}{29}
+\contentsline {subsubsection}{\numberline {4.9.2.1}Validador}{29}
+\contentsline {subsubsection}{\numberline {4.9.2.2}$\sim $\discretionary {-}{}{}Validador}{29}
+\contentsline {subsection}{\numberline {4.9.3}Member Function Documentation}{30}
+\contentsline {subsubsection}{\numberline {4.9.3.1}es\discretionary {-}{}{}Valido}{30}
+\contentsline {subsubsection}{\numberline {4.9.3.2}get\discretionary {-}{}{}Content}{30}
+\contentsline {subsection}{\numberline {4.9.4}Member Data Documentation}{31}
+\contentsline {subsubsection}{\numberline {4.9.4.1}content}{31}
+\contentsline {subsubsection}{\numberline {4.9.4.2}path}{31}
+\contentsline {subsubsection}{\numberline {4.9.4.3}size}{31}
+\contentsline {chapter}{\numberline {5}File Documentation}{33}
+\contentsline {section}{\numberline {5.1}Proyecto\discretionary {-}{}{}Integrador2/\discretionary {-}{}{}Aplicacion.cpp File Reference}{33}
+\contentsline {section}{\numberline {5.2}Proyecto\discretionary {-}{}{}Integrador2/\discretionary {-}{}{}Aplicacion.h File Reference}{33}
+\contentsline {section}{\numberline {5.3}Proyecto\discretionary {-}{}{}Integrador2/\discretionary {-}{}{}Consulta.cpp File Reference}{34}
+\contentsline {section}{\numberline {5.4}Proyecto\discretionary {-}{}{}Integrador2/\discretionary {-}{}{}Consulta.h File Reference}{35}
+\contentsline {section}{\numberline {5.5}Proyecto\discretionary {-}{}{}Integrador2/\discretionary {-}{}{}Cuestionario.cpp File Reference}{36}
+\contentsline {section}{\numberline {5.6}Proyecto\discretionary {-}{}{}Integrador2/\discretionary {-}{}{}Cuestionario.h File Reference}{37}
+\contentsline {section}{\numberline {5.7}Proyecto\discretionary {-}{}{}Integrador2/\discretionary {-}{}{}Encriptador.cpp File Reference}{38}
+\contentsline {subsection}{\numberline {5.7.1}Function Documentation}{38}
+\contentsline {subsubsection}{\numberline {5.7.1.1}validar\discretionary {-}{}{}Acceso}{38}
+\contentsline {section}{\numberline {5.8}Proyecto\discretionary {-}{}{}Integrador2/\discretionary {-}{}{}Encriptador.h File Reference}{39}
+\contentsline {subsection}{\numberline {5.8.1}Function Documentation}{40}
+\contentsline {subsubsection}{\numberline {5.8.1.1}validar\discretionary {-}{}{}Acceso}{41}
+\contentsline {section}{\numberline {5.9}Proyecto\discretionary {-}{}{}Integrador2/\discretionary {-}{}{}Menu.cpp File Reference}{42}
+\contentsline {section}{\numberline {5.10}Proyecto\discretionary {-}{}{}Integrador2/\discretionary {-}{}{}Menu.h File Reference}{42}
+\contentsline {section}{\numberline {5.11}Proyecto\discretionary {-}{}{}Integrador2/\discretionary {-}{}{}Preguntas.cpp File Reference}{43}
+\contentsline {section}{\numberline {5.12}Proyecto\discretionary {-}{}{}Integrador2/\discretionary {-}{}{}Preguntas.h File Reference}{44}
+\contentsline {section}{\numberline {5.13}Proyecto\discretionary {-}{}{}Integrador2/\discretionary {-}{}{}Proyecto\discretionary {-}{}{}Integrador2.cpp File Reference}{45}
+\contentsline {subsection}{\numberline {5.13.1}Function Documentation}{45}
+\contentsline {subsubsection}{\numberline {5.13.1.1}\discretionary {-}{}{}\_\discretionary {-}{}{}tmain}{46}
+\contentsline {section}{\numberline {5.14}Proyecto\discretionary {-}{}{}Integrador2/stdafx.cpp File Reference}{46}
+\contentsline {section}{\numberline {5.15}Proyecto\discretionary {-}{}{}Integrador2/stdafx.h File Reference}{47}
+\contentsline {subsection}{\numberline {5.15.1}Macro Definition Documentation}{48}
+\contentsline {subsubsection}{\numberline {5.15.1.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}U\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}N\discretionary {-}{}{}O\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}N\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}G\discretionary {-}{}{}S}{48}
+\contentsline {section}{\numberline {5.16}Proyecto\discretionary {-}{}{}Integrador2/targetver.h File Reference}{48}
+\contentsline {part}{Index}{50}

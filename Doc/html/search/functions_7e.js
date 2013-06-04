@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['_7eaplicacion',['~Aplicacion',['../class_aplicacion.html#a664c55738e44ec36338dbc6f38531263',1,'Aplicacion']]],
+  ['_7econsulta',['~Consulta',['../class_consulta.html#a619b1ed733470d7553a893227ae5884a',1,'Consulta']]],
   ['_7ecuestionario',['~Cuestionario',['../class_cuestionario.html#af2998a894d70b648fc0a088924cf09f2',1,'Cuestionario']]],
   ['_7eencriptador',['~Encriptador',['../class_encriptador.html#a93024926b47a3da38bd8b3ff83c5fb84',1,'Encriptador']]],
   ['_7epregunta',['~Pregunta',['../class_pregunta.html#a644894e8c4158aebd9e4ce443c59a0e4',1,'Pregunta']]],

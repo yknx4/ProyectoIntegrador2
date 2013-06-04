@@ -120,5 +120,5 @@ void PreguntaOpcMult::imprimirPregunta()
 	{
 		cout<<char(i+97)<<") "<<opcions[i]<<"\t";
 	}
-	cout<<"\n";
+	cout<<"\n\n";
 }

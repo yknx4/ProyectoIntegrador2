@@ -5,5 +5,6 @@ var class_pregunta =
     [ "getRespuesta", "class_pregunta.html#af7a75dd736d793e35133b0c50fbedb5f", null ],
     [ "imprimirPregunta", "class_pregunta.html#ac97860f3cd3d11c415e8cde6e529d7b9", null ],
     [ "responder", "class_pregunta.html#aaf28e3a833e98b6b8bbd9267311a1ad2", null ],
+    [ "pregunta", "class_pregunta.html#a8bc772aa0e231c39867b2c465cf7b2b8", null ],
     [ "respuesta", "class_pregunta.html#a4143cf5905f04f96c035ad12dd5dc9d2", null ]
 ];

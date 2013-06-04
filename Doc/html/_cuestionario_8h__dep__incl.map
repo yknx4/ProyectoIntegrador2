@@ -1,4 +1,6 @@
 <map id="ProyectoIntegrador2/Cuestionario.h" name="ProyectoIntegrador2/Cuestionario.h">
-<area shape="rect" id="node2" href="$_cuestionario_8cpp.html" title="ProyectoIntegrador2\l/Cuestionario.cpp" alt="" coords="5,97,144,138"/>
-<area shape="rect" id="node3" href="$_proyecto_integrador2_8cpp.html" title="ProyectoIntegrador2\l/ProyectoIntegrador2.cpp" alt="" coords="169,97,335,138"/>
+<area shape="rect" id="node2" href="$_aplicacion_8cpp.html" title="ProyectoIntegrador2\l/Aplicacion.cpp" alt="" coords="5,187,144,229"/>
+<area shape="rect" id="node3" href="$_aplicacion_8h.html" title="ProyectoIntegrador2\l/Aplicacion.h" alt="" coords="112,97,251,138"/>
+<area shape="rect" id="node5" href="$_cuestionario_8cpp.html" title="ProyectoIntegrador2\l/Cuestionario.cpp" alt="" coords="275,97,413,138"/>
+<area shape="rect" id="node4" href="$_proyecto_integrador2_8cpp.html" title="ProyectoIntegrador2\l/ProyectoIntegrador2.cpp" alt="" coords="169,187,335,229"/>
 </map>

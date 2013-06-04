@@ -1,129 +1,250 @@
 \begin{theindex}
 
+  \item {$\sim$\-Aplicacion}
+    \subitem {Aplicacion}, 8
+  \item {$\sim$\-Consulta}
+    \subitem {Consulta}, 13
   \item {$\sim$\-Cuestionario}
-    \subitem {Cuestionario}, 7
+    \subitem {Cuestionario}, 16
   \item {$\sim$\-Encriptador}
-    \subitem {Encriptador}, 10
+    \subitem {Encriptador}, 18
   \item {$\sim$\-Pregunta}
-    \subitem {Pregunta}, 12
+    \subitem {Pregunta}, 23
   \item {$\sim$\-Pregunta5a10}
-    \subitem {Pregunta5a10}, 14
+    \subitem {Pregunta5a10}, 25
   \item {$\sim$\-Pregunta\-Opc\-Mult}
-    \subitem {Pregunta\-Opc\-Mult}, 16
+    \subitem {Pregunta\-Opc\-Mult}, 27
   \item {$\sim$\-Validador}
-    \subitem {Validador}, 18
+    \subitem {Validador}, 29
+  \item {\-\_\-\-C\-R\-T\-\_\-\-S\-E\-C\-U\-R\-E\-\_\-\-N\-O\-\_\-\-W\-A\-R\-N\-I\-N\-G\-S}
+    \subitem {stdafx.\-h}, 48
+  \item {\-\_\-tmain}
+    \subitem {Proyecto\-Integrador2.\-cpp}, 45
 
   \indexspace
 
+  \item {add\-Opcion}
+    \subitem {Menu}, 21
   \item {add\-Pregunta}
-    \subitem {Cuestionario}, 8
+    \subitem {Aplicacion}, 8
+    \subitem {Consulta}, 14
+    \subitem {Cuestionario}, 16
+  \item {Aplicacion}, 7
+    \subitem {$\sim$\-Aplicacion}, 8
+    \subitem {add\-Pregunta}, 8
+    \subitem {Aplicacion}, 8
+    \subitem {Encuesta}, 8
+    \subitem {final}, 12
+    \subitem {iniciar}, 9
+    \subitem {menu}, 12
+    \subitem {preguntas}, 12
+    \subitem {Registros}, 11
+  \item {archivo}
+    \subitem {Consulta}, 15
 
   \indexspace
 
   \item {Cifrar}
-    \subitem {Encriptador}, 10
-  \item {Cuestionario}, 7
-    \subitem {$\sim$\-Cuestionario}, 7
-    \subitem {add\-Pregunta}, 8
-    \subitem {Cuestionario}, 7
-    \subitem {Guardar\-Cuestionario}, 8
-    \subitem {hacer\-Preguntas}, 9
+    \subitem {Encriptador}, 19
+  \item {clave\-Desencriptacion}
+    \subitem {Encriptador}, 20
+  \item {clave\-Encriptacion}
+    \subitem {Encriptador}, 20
+  \item {Consulta}, 13
+    \subitem {$\sim$\-Consulta}, 13
+    \subitem {add\-Pregunta}, 14
+    \subitem {archivo}, 15
+    \subitem {Consulta}, 13
+    \subitem {imprimir\-Datos}, 14
+    \subitem {leer\-Archivo}, 14
+    \subitem {leer\-Datos}, 14
+    \subitem {preguntas}, 15
+    \subitem {Registros}, 15
+  \item {content}
+    \subitem {Validador}, 31
+  \item {Cuestionario}, 15
+    \subitem {$\sim$\-Cuestionario}, 16
+    \subitem {add\-Pregunta}, 16
+    \subitem {Cuestionario}, 16
+    \subitem {Guardar\-Cuestionario}, 16
+    \subitem {hacer\-Preguntas}, 17
+    \subitem {preguntas}, 18
 
   \indexspace
 
   \item {Decifrar}
-    \subitem {Encriptador}, 10
+    \subitem {Encriptador}, 19
 
   \indexspace
 
-  \item {Encriptador}, 9
-    \subitem {$\sim$\-Encriptador}, 10
-    \subitem {Cifrar}, 10
-    \subitem {Decifrar}, 10
-    \subitem {Encriptador}, 9
+  \item {Encriptador}, 18
+    \subitem {$\sim$\-Encriptador}, 18
+    \subitem {Cifrar}, 19
+    \subitem {clave\-Desencriptacion}, 20
+    \subitem {clave\-Encriptacion}, 20
+    \subitem {Decifrar}, 19
+    \subitem {Encriptador}, 18
+    \subitem {tamano\-Clave}, 20
   \item {Encriptador.\-cpp}
-    \subitem {validar\-Acceso}, 23
+    \subitem {validar\-Acceso}, 38
   \item {Encriptador.\-h}
-    \subitem {validar\-Acceso}, 25
+    \subitem {validar\-Acceso}, 40
+  \item {Encuesta}
+    \subitem {Aplicacion}, 8
   \item {es\-Valido}
-    \subitem {Validador}, 18
+    \subitem {Validador}, 30
+
+  \indexspace
+
+  \item {final}
+    \subitem {Aplicacion}, 12
 
   \indexspace
 
   \item {get\-Content}
-    \subitem {Validador}, 19
+    \subitem {Validador}, 30
   \item {get\-Respuesta}
-    \subitem {Pregunta}, 12
+    \subitem {Pregunta}, 23
   \item {Guardar\-Cuestionario}
-    \subitem {Cuestionario}, 8
+    \subitem {Cuestionario}, 16
 
   \indexspace
 
   \item {hacer\-Preguntas}
-    \subitem {Cuestionario}, 9
+    \subitem {Cuestionario}, 17
 
   \indexspace
 
+  \item {imprimir\-Datos}
+    \subitem {Consulta}, 14
   \item {imprimir\-Pregunta}
-    \subitem {Pregunta}, 12
-    \subitem {Pregunta5a10}, 15
-    \subitem {Pregunta\-Opc\-Mult}, 17
+    \subitem {Pregunta}, 23
+    \subitem {Pregunta5a10}, 25
+    \subitem {Pregunta\-Opc\-Mult}, 27
+  \item {iniciar}
+    \subitem {Aplicacion}, 9
+
+  \indexspace
+
+  \item {leer\-Archivo}
+    \subitem {Consulta}, 14
+  \item {leer\-Datos}
+    \subitem {Consulta}, 14
+
+  \indexspace
+
+  \item {Menu}, 20
+    \subitem {add\-Opcion}, 21
+    \subitem {Menu}, 20
+    \subitem {opc}, 21
+    \subitem {opciones}, 21
+    \subitem {Seleccionar\-Opcion}, 21
+  \item {menu}
+    \subitem {Aplicacion}, 12
+
+  \indexspace
+
+  \item {numero\-Opciones}
+    \subitem {Pregunta\-Opc\-Mult}, 28
+
+  \indexspace
+
+  \item {opc}
+    \subitem {Menu}, 21
+  \item {opciones}
+    \subitem {Menu}, 21
+  \item {opcions}
+    \subitem {Pregunta\-Opc\-Mult}, 28
 
   \indexspace
 
   \item {path}
-    \subitem {Validador}, 19
-  \item {Pregunta}, 11
-    \subitem {$\sim$\-Pregunta}, 12
-    \subitem {get\-Respuesta}, 12
-    \subitem {imprimir\-Pregunta}, 12
-    \subitem {Pregunta}, 12
-    \subitem {responder}, 12
-    \subitem {respuesta}, 13
-  \item {Pregunta5a10}, 13
-    \subitem {$\sim$\-Pregunta5a10}, 14
-    \subitem {imprimir\-Pregunta}, 15
-    \subitem {Pregunta5a10}, 14
-    \subitem {responder}, 15
-  \item {Pregunta\-Opc\-Mult}, 15
-    \subitem {$\sim$\-Pregunta\-Opc\-Mult}, 16
-    \subitem {imprimir\-Pregunta}, 17
-    \subitem {Pregunta\-Opc\-Mult}, 16
-    \subitem {Pregunta\-Opc\-Mult}, 16
-    \subitem {responder}, 17
-  \item {Proyecto\-Integrador2/\-Cuestionario.\-cpp}, 21
-  \item {Proyecto\-Integrador2/\-Cuestionario.\-h}, 21
-  \item {Proyecto\-Integrador2/\-Encriptador.\-cpp}, 22
-  \item {Proyecto\-Integrador2/\-Encriptador.\-h}, 24
-  \item {Proyecto\-Integrador2/\-Preguntas.\-cpp}, 26
-  \item {Proyecto\-Integrador2/\-Preguntas.\-h}, 27
-  \item {Proyecto\-Integrador2/\-Proyecto\-Integrador2.\-cpp}, 28
+    \subitem {Validador}, 31
+  \item {Pregunta}, 22
+    \subitem {$\sim$\-Pregunta}, 23
+    \subitem {get\-Respuesta}, 23
+    \subitem {imprimir\-Pregunta}, 23
+    \subitem {Pregunta}, 23
+    \subitem {pregunta}, 24
+    \subitem {responder}, 23
+    \subitem {respuesta}, 24
+  \item {pregunta}
+    \subitem {Pregunta}, 24
+  \item {Pregunta5a10}, 24
+    \subitem {$\sim$\-Pregunta5a10}, 25
+    \subitem {imprimir\-Pregunta}, 25
+    \subitem {Pregunta5a10}, 25
+    \subitem {responder}, 25
+  \item {Pregunta\-Opc\-Mult}, 26
+    \subitem {$\sim$\-Pregunta\-Opc\-Mult}, 27
+    \subitem {imprimir\-Pregunta}, 27
+    \subitem {numero\-Opciones}, 28
+    \subitem {opcions}, 28
+    \subitem {Pregunta\-Opc\-Mult}, 27
+    \subitem {Pregunta\-Opc\-Mult}, 27
+    \subitem {responder}, 28
+  \item {preguntas}
+    \subitem {Aplicacion}, 12
+    \subitem {Consulta}, 15
+    \subitem {Cuestionario}, 18
+  \item {Proyecto\-Integrador2.\-cpp}
+    \subitem {\-\_\-tmain}, 45
+  \item {Proyecto\-Integrador2/\-Aplicacion.\-cpp}, 33
+  \item {Proyecto\-Integrador2/\-Aplicacion.\-h}, 33
+  \item {Proyecto\-Integrador2/\-Consulta.\-cpp}, 34
+  \item {Proyecto\-Integrador2/\-Consulta.\-h}, 35
+  \item {Proyecto\-Integrador2/\-Cuestionario.\-cpp}, 36
+  \item {Proyecto\-Integrador2/\-Cuestionario.\-h}, 37
+  \item {Proyecto\-Integrador2/\-Encriptador.\-cpp}, 38
+  \item {Proyecto\-Integrador2/\-Encriptador.\-h}, 39
+  \item {Proyecto\-Integrador2/\-Menu.\-cpp}, 42
+  \item {Proyecto\-Integrador2/\-Menu.\-h}, 42
+  \item {Proyecto\-Integrador2/\-Preguntas.\-cpp}, 43
+  \item {Proyecto\-Integrador2/\-Preguntas.\-h}, 44
+  \item {Proyecto\-Integrador2/\-Proyecto\-Integrador2.\-cpp}, 45
+  \item {Proyecto\-Integrador2/stdafx.\-cpp}, 46
+  \item {Proyecto\-Integrador2/stdafx.\-h}, 47
+  \item {Proyecto\-Integrador2/targetver.\-h}, 48
 
   \indexspace
 
+  \item {Registros}
+    \subitem {Aplicacion}, 11
+    \subitem {Consulta}, 15
   \item {responder}
-    \subitem {Pregunta}, 12
-    \subitem {Pregunta5a10}, 15
-    \subitem {Pregunta\-Opc\-Mult}, 17
+    \subitem {Pregunta}, 23
+    \subitem {Pregunta5a10}, 25
+    \subitem {Pregunta\-Opc\-Mult}, 28
   \item {respuesta}
-    \subitem {Pregunta}, 13
+    \subitem {Pregunta}, 24
 
   \indexspace
 
+  \item {Seleccionar\-Opcion}
+    \subitem {Menu}, 21
   \item {size}
-    \subitem {Validador}, 20
+    \subitem {Validador}, 31
+  \item {stdafx.\-h}
+    \subitem {\-\_\-\-C\-R\-T\-\_\-\-S\-E\-C\-U\-R\-E\-\_\-\-N\-O\-\_\-\-W\-A\-R\-N\-I\-N\-G\-S}, 
+		48
 
   \indexspace
 
-  \item {Validador}, 17
-    \subitem {$\sim$\-Validador}, 18
-    \subitem {es\-Valido}, 18
-    \subitem {get\-Content}, 19
-    \subitem {path}, 19
-    \subitem {size}, 20
-    \subitem {Validador}, 18
+  \item {tamano\-Clave}
+    \subitem {Encriptador}, 20
+
+  \indexspace
+
+  \item {Validador}, 28
+    \subitem {$\sim$\-Validador}, 29
+    \subitem {content}, 31
+    \subitem {es\-Valido}, 30
+    \subitem {get\-Content}, 30
+    \subitem {path}, 31
+    \subitem {size}, 31
+    \subitem {Validador}, 29
   \item {validar\-Acceso}
-    \subitem {Encriptador.\-cpp}, 23
-    \subitem {Encriptador.\-h}, 25
+    \subitem {Encriptador.\-cpp}, 38
+    \subitem {Encriptador.\-h}, 40
 
 \end{theindex}

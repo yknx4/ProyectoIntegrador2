@@ -2,11 +2,12 @@
 #define _CUESTIONARIO_H
 #include "Preguntas.h"
 #include <vector>
-
+using namespace std;
 class Cuestionario
 {
 public:
 	Cuestionario();
+	Cuestionario(vector <Pregunta*> preguntas);
 	~Cuestionario();
 	bool GuardarCuestionario();
 	void hacerPreguntas();
